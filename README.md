@@ -1,0 +1,1 @@
+Implementation of AES encryption standard 128, 192 and 256 bits in VHDL based on AES paper, "A Highly Regular and Scalable AES Hardware Architecture" article of Stefan Mangard and "An ASIC Implementation of the AES SBoxes" article of Johannes Wolkerstorfer, Elisabeth Oswald, and Mario Lamberger
