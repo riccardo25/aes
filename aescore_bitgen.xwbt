@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Repository\XILINX\aes\aescore.ncd
+OUTFILE=D:\Repository\XILINX\aes\aescore.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=D:\Repository\XILINX\aes
+LICENSE=WebPack
+USER_INFO=211506865_0_0_331
