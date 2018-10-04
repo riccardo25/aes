@@ -1,0 +1,13 @@
+NET "CLK" LOC = "L15";
+NET "rst_n" LOC = "T15";
+NET "test_out<0>" LOC="U18";
+NET "test_out<1>" LOC="M14";
+NET "test_out<2>" LOC="N14";
+NET "test_out<3>" LOC="L14";
+NET "test_out<4>" LOC="M13";
+NET "test_out<5>" LOC="D4";
+NET "test_out<6>" LOC="P16";
+NET "test_out<7>" LOC="N12";
+NET "RXD" LOC="A16";
+NET "TXD" LOC="B16";
+NET "BTNU" LOC="N4";

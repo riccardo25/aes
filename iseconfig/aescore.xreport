@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-09-28T15:44:29</DateModified>
+  <DateModified>2018-10-01T13:46:03</DateModified>
   <ModuleName>aescore</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-09-28T15:53:16</SummaryTimeStamp>
   <SavedFilePath>D:/Repository/XILINX/aes/iseconfig/aescore.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Repository/XILINX/aes</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Repository/XILINX/aes\</ImplementationReportsDirectory>
   <DateInitialized>2018-09-28T15:44:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

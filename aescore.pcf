@@ -1,4 +1,20 @@
 //! **************************************************************************
-// Written by: Map M.53d on Fri Sep 28 15:51:43 2018
+// Written by: Map M.53d on Fri Sep 28 17:26:20 2018
 //! **************************************************************************
+
+SCHEMATIC START;
+COMP "CLK" LOCATE = SITE "L15" LEVEL 1;
+COMP "RXD" LOCATE = SITE "A16" LEVEL 1;
+COMP "TXD" LOCATE = SITE "B16" LEVEL 1;
+COMP "BTNU" LOCATE = SITE "N4" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "T15" LEVEL 1;
+COMP "test_out<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "test_out<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "test_out<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "test_out<3>" LOCATE = SITE "L14" LEVEL 1;
+COMP "test_out<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "test_out<5>" LOCATE = SITE "D4" LEVEL 1;
+COMP "test_out<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "test_out<7>" LOCATE = SITE "N12" LEVEL 1;
+SCHEMATIC END;
 
