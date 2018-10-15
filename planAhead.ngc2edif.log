@@ -1,0 +1,62 @@
+Release 12.1 - ngc2edif M.53d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Reading design aescore.ngc ...
+WARNING:NetListWriters:298 - No output is written to aescore.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus AES1/KGEN/GEN/DATPATH1/q[25 : 0] on
+   block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig9[3
+   : 0] on block aescore is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus AES1/KGEN/GEN/DATPATH1/SBX2/INV1/sig9[3
+   : 0] on block aescore is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus AES1/KGEN/GEN/DATPATH1/SBX3/INV1/sig9[3
+   : 0] on block aescore is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus AES1/KGEN/GEN/DATPATH1/SBX4/INV1/sig9[3
+   : 0] on block aescore is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX3/INV1/sig9[3 :
+   0] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX2/INV1/sig9[3 :
+   0] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX1/INV1/sig9[3 :
+   0] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX0/INV1/sig9[3 :
+   0] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX0/outinvers[6 :
+   0] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX0/ininvers[7 :
+   1] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX1/outinvers[6 :
+   0] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX1/ininvers[7 :
+   1] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX2/outinvers[6 :
+   0] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX2/ininvers[7 :
+   1] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX3/outinvers[6 :
+   0] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus AES1/DUNIT/DATAPATH/SBOX3/ininvers[7 :
+   1] on block aescore is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file aescore.edif ...
+ngc2edif: Total memory usage is 82876 kilobytes
+

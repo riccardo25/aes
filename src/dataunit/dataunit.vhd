@@ -3,26 +3,26 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
-entity dataunit is
+	entity dataunit is
 
-	port (
-			--INPUT
-			CLK, rst_n 							: in std_logic;
-			keywords								: in std_logic_vector (127 downto 0);
-			in0, in1, in2, in3				: in std_logic_vector (7 downto 0);
-			key_lenght							: in std_logic_vector (1 downto 0);
-			enc									: in std_logic;	
-			key_valid							: in std_logic;
-			ready_for_input					: in std_logic;
-			--OUTPUT
-			loading								: out std_logic;
-			ROUND									: out std_logic_vector (3 downto 0);
-			data_out0, data_out1,
-			data_out2, data_out3				: out std_logic_vector (7 downto 0);
-			valid_out							: out std_logic
-			
-		);
-end dataunit;
+		port (
+				--INPUT
+				CLK, rst_n 							: in std_logic;
+				keywords								: in std_logic_vector (127 downto 0);
+				in0, in1, in2, in3				: in std_logic_vector (7 downto 0);
+				key_lenght							: in std_logic_vector (1 downto 0);
+				enc									: in std_logic;	
+				key_valid							: in std_logic;
+				
+				--OUTPUT
+				loading								: out std_logic;
+				ROUND									: out std_logic_vector (3 downto 0);
+				data_out0, data_out1,
+				data_out2, data_out3				: out std_logic_vector (7 downto 0);
+				valid_out							: out std_logic
+				
+			);
+	end dataunit;
 
 architecture arc of dataunit is
 
@@ -36,7 +36,6 @@ architecture arc of dataunit is
 				key_lenght							: in std_logic_vector (1 downto 0);
 				enc									: in std_logic;
 				key_valid							: in std_logic;
-				ready_for_input					: in std_logic;
 				sel_state, sel_round				: out std_logic_vector (2 downto 0);
 				reset_reg							: out std_logic;
 				loading								: out std_logic;
@@ -95,7 +94,7 @@ begin
 		ROUND => sig_ROUND,	key_lenght => key_lenght, sel_round => sel_round,
 		reset_reg => reset_reg, sel_state => sel_state, key_valid => key_valid,
 		load_round => load_round, load_state => load_state, enc => enc,
-		loading => loading, ready_for_input	=>ready_for_input,
+		loading => loading,
 		br0_sel => br0_sel, br1_sel => br1_sel, br2_sel => br2_sel, br3_sel => br3_sel,
 		valid_out => valid_out);
 		

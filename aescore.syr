@@ -187,6 +187,9 @@ Parsing architecture <arc> of entity <adder2input>.
 Parsing VHDL file "D:\Repository\XILINX\aes\src\dataunit\datacell_datapath.vhd" into library work
 Parsing entity <datacell_datapath>.
 Parsing architecture <arc> of entity <datacell_datapath>.
+Parsing VHDL file "D:\Repository\XILINX\aes\src\keygen\key_mix.vhd" into library work
+Parsing entity <key_mix>.
+Parsing architecture <arc> of entity <key_mix>.
 Parsing VHDL file "D:\Repository\XILINX\aes\src\keygen\gen_datapath.vhd" into library work
 Parsing entity <gen_datapath>.
 Parsing architecture <arc> of entity <gen_datapath>.
@@ -220,6 +223,18 @@ Parsing architecture <arc> of entity <dataunit_datapath>.
 Parsing VHDL file "D:\Repository\XILINX\aes\src\dataunit\dataunit_control.vhd" into library work
 Parsing entity <dataunit_control>.
 Parsing architecture <arc> of entity <dataunit_control>.
+Parsing VHDL file "D:\Repository\XILINX\aes\src\aescore\cap_tx_datapath.vhd" into library work
+Parsing entity <cap_tx_datapath>.
+Parsing architecture <arc> of entity <cap_tx_datapath>.
+Parsing VHDL file "D:\Repository\XILINX\aes\src\aescore\cap_tx_ctrlunit.vhd" into library work
+Parsing entity <cap_tx_ctrlunit>.
+Parsing architecture <arc> of entity <cap_tx_ctrlunit>.
+Parsing VHDL file "D:\Repository\XILINX\aes\src\aescore\cap_rx_datapath.vhd" into library work
+Parsing entity <cap_rx_datapath>.
+Parsing architecture <arc> of entity <cap_rx_datapath>.
+Parsing VHDL file "D:\Repository\XILINX\aes\src\aescore\cap_rx_ctrluniut.vhd" into library work
+Parsing entity <cap_rx_ctrlunit>.
+Parsing architecture <arc> of entity <cap_rx_ctrlunit>.
 Parsing VHDL file "D:\Repository\XILINX\aes\src\serial\serial.vhdl" into library work
 Parsing entity <serial>.
 Parsing architecture <struct> of entity <serial>.
@@ -232,12 +247,15 @@ Parsing architecture <arc> of entity <dataunit>.
 Parsing VHDL file "D:\Repository\XILINX\aes\src\cipher\cbc.vhd" into library work
 Parsing entity <cbc>.
 Parsing architecture <arc> of entity <cbc>.
-Parsing VHDL file "D:\Repository\XILINX\aes\src\aescore\cap_datapath.vhd" into library work
-Parsing entity <cap_datapath>.
-Parsing architecture <arc> of entity <cap_datapath>.
-Parsing VHDL file "D:\Repository\XILINX\aes\src\aescore\cap_controlunit.vhd" into library work
-Parsing entity <cap_controlunit>.
-Parsing architecture <arc> of entity <cap_controlunit>.
+Parsing VHDL file "D:\Repository\XILINX\aes\src\aescore\SKMD_controller.vhd" into library work
+Parsing entity <SKMD_controller>.
+Parsing architecture <arc> of entity <skmd_controller>.
+Parsing VHDL file "D:\Repository\XILINX\aes\src\aescore\cap_tx.vhd" into library work
+Parsing entity <cap_tx>.
+Parsing architecture <arc> of entity <cap_tx>.
+Parsing VHDL file "D:\Repository\XILINX\aes\src\aescore\cap_rx.vhd" into library work
+Parsing entity <cap_rx>.
+Parsing architecture <arc> of entity <cap_rx>.
 Parsing VHDL file "D:\Repository\XILINX\aes\src\cipher\cipher.vhd" into library work
 Parsing entity <cipher>.
 Parsing architecture <arc> of entity <cipher>.
@@ -255,12 +273,6 @@ Parsing architecture <arc> of entity <aescore>.
 Elaborating entity <aescore> (architecture <arc>) from library <work>.
 
 Elaborating entity <cipher> (architecture <arc>) from library <work>.
-
-Elaborating entity <reg> (architecture <arc>) with generics from library <work>.
-
-Elaborating entity <reg> (architecture <arc>) with generics from library <work>.
-
-Elaborating entity <reg> (architecture <arc>) with generics from library <work>.
 
 Elaborating entity <key_generator> (architecture <arc>) from library <work>.
 
@@ -312,12 +324,19 @@ Elaborating entity <gen_control> (architecture <arc>) from library <work>.
 
 Elaborating entity <reg> (architecture <arc>) with generics from library <work>.
 
+Elaborating entity <reg> (architecture <arc>) with generics from library <work>.
+
 Elaborating entity <storage> (architecture <arc>) from library <work>.
-WARNING:HDLCompiler:1127 - "D:\Repository\XILINX\aes\src\keygen\storage.vhd" Line 86: Assignment to r0in ignored, since the identifier is never used
 
 Elaborating entity <reg> (architecture <arc>) with generics from library <work>.
 
 Elaborating entity <key_interface> (architecture <arc>) from library <work>.
+
+Elaborating entity <reg> (architecture <arc>) with generics from library <work>.
+
+Elaborating entity <reg> (architecture <arc>) with generics from library <work>.
+
+Elaborating entity <key_mix> (architecture <arc>) from library <work>.
 
 Elaborating entity <mix_columns> (architecture <arc>) from library <work>.
 
@@ -361,6 +380,9 @@ Elaborating entity <mux2input> (architecture <arc>) with generics from library <
 Elaborating entity <cbc> (architecture <arc>) from library <work>.
 Case statement is complete. Others clause is never selected and therefore discarded.
 
+Elaborating entity <SKMD_controller> (architecture <arc>) from library <work>.
+Case statement is complete. Others clause is never selected and therefore discarded.
+
 Elaborating entity <cap> (architecture <arc>) from library <work>.
 
 Elaborating entity <serial> (architecture <struct>) from library <work>.
@@ -371,14 +393,23 @@ Case statement is complete. Others clause is never selected and therefore discar
 Elaborating entity <rx> (architecture <s>) from library <work>.
 Case statement is complete. Others clause is never selected and therefore discarded.
 
-Elaborating entity <cap_controlunit> (architecture <arc>) from library <work>.
+Elaborating entity <cap_tx> (architecture <arc>) from library <work>.
+
+Elaborating entity <cap_tx_ctrlunit> (architecture <arc>) from library <work>.
 Case statement is complete. Others clause is never selected and therefore discarded.
 
-Elaborating entity <cap_datapath> (architecture <arc>) from library <work>.
+Elaborating entity <cap_tx_datapath> (architecture <arc>) from library <work>.
 
 Elaborating entity <adder2input> (architecture <arc>) with generics from library <work>.
 
 Elaborating entity <reg> (architecture <arc>) with generics from library <work>.
+
+Elaborating entity <cap_rx> (architecture <arc>) from library <work>.
+
+Elaborating entity <cap_rx_ctrlunit> (architecture <arc>) from library <work>.
+Case statement is complete. Others clause is never selected and therefore discarded.
+
+Elaborating entity <cap_rx_datapath> (architecture <arc>) from library <work>.
 
 Elaborating entity <mux2input> (architecture <arc>) with generics from library <work>.
 
@@ -388,41 +419,17 @@ Elaborating entity <mux2input> (architecture <arc>) with generics from library <
 
 Synthesizing Unit <aescore>.
     Related source file is "d:/repository/xilinx/aes/src/aescore/aescore.vhd".
-    Found 1-bit register for signal <CLK_new>.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/aescore/aescore.vhd" line 146: Output port <datasend> of the instance <TRANSM> is unconnected or connected to loadless signal.
     Summary:
-	inferred   1 D-type flip-flop(s).
+	no macro.
 Unit <aescore> synthesized.
 
 Synthesizing Unit <cipher>.
     Related source file is "d:/repository/xilinx/aes/src/cipher/cipher.vhd".
-    Found 1-bit register for signal <enc_int>.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/cipher/cipher.vhd" line 246: Output port <curr_key> of the instance <DL1> is unconnected or connected to loadless signal.
     Summary:
-	inferred   1 D-type flip-flop(s).
+	no macro.
 Unit <cipher> synthesized.
-
-Synthesizing Unit <reg_1>.
-    Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
-        N = 256
-    Found 256-bit register for signal <Q>.
-    Summary:
-	inferred 256 D-type flip-flop(s).
-Unit <reg_1> synthesized.
-
-Synthesizing Unit <reg_2>.
-    Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
-        N = 2
-    Found 2-bit register for signal <Q>.
-    Summary:
-	inferred   2 D-type flip-flop(s).
-Unit <reg_2> synthesized.
-
-Synthesizing Unit <reg_3>.
-    Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
-        N = 128
-    Found 128-bit register for signal <Q>.
-    Summary:
-	inferred 128 D-type flip-flop(s).
-Unit <reg_3> synthesized.
 
 Synthesizing Unit <key_generator>.
     Related source file is "d:/repository/xilinx/aes/src/keygen/key_generator.vhd".
@@ -432,14 +439,20 @@ Unit <key_generator> synthesized.
 
 Synthesizing Unit <generator>.
     Related source file is "d:/repository/xilinx/aes/src/keygen/generator.vhd".
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/keygen/generator.vhd" line 90: Output port <w0> of the instance <DATPATH1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/keygen/generator.vhd" line 90: Output port <w1> of the instance <DATPATH1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/keygen/generator.vhd" line 90: Output port <w2> of the instance <DATPATH1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/keygen/generator.vhd" line 90: Output port <w3> of the instance <DATPATH1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/keygen/generator.vhd" line 90: Output port <w4> of the instance <DATPATH1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/keygen/generator.vhd" line 90: Output port <w5> of the instance <DATPATH1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/keygen/generator.vhd" line 90: Output port <w6> of the instance <DATPATH1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/keygen/generator.vhd" line 90: Output port <w7> of the instance <DATPATH1> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <generator> synthesized.
 
 Synthesizing Unit <gen_datapath>.
     Related source file is "d:/repository/xilinx/aes/src/keygen/gen_datapath.vhd".
-WARNING:Xst:647 - Input <key_len<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <ROUND<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 Unit <gen_datapath> synthesized.
 
@@ -458,13 +471,13 @@ Synthesizing Unit <mux2input_1>.
 	inferred   1 Multiplexer(s).
 Unit <mux2input_1> synthesized.
 
-Synthesizing Unit <reg_4>.
+Synthesizing Unit <reg_1>.
     Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
         N = 4
     Found 4-bit register for signal <Q>.
     Summary:
 	inferred   4 D-type flip-flop(s).
-Unit <reg_4> synthesized.
+Unit <reg_1> synthesized.
 
 Synthesizing Unit <mux4input_1>.
     Related source file is "d:/repository/xilinx/aes/src/general/mux4input.vhd".
@@ -568,26 +581,16 @@ Synthesizing Unit <mux3input_2>.
 	inferred   1 Multiplexer(s).
 Unit <mux3input_2> synthesized.
 
-Synthesizing Unit <reg_5>.
+Synthesizing Unit <reg_2>.
     Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
         N = 32
     Found 32-bit register for signal <Q>.
     Summary:
 	inferred  32 D-type flip-flop(s).
-Unit <reg_5> synthesized.
+Unit <reg_2> synthesized.
 
 Synthesizing Unit <gen_control>.
     Related source file is "d:/repository/xilinx/aes/src/keygen/gen_control.vhd".
-WARNING:Xst:647 - Input <key<255:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <ROUND<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <w0<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <w1<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <w2<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <w3<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <w4<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <w5<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <w6<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <w7<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 6-bit register for signal <state>.
 INFO:Xst:1799 - State wait13 is never reached in FSM <nextstate[5]_dff_0>.
 INFO:Xst:1799 - State wait14 is never reached in FSM <nextstate[5]_dff_0>.
@@ -618,13 +621,21 @@ INFO:Xst:1799 - State wait22 is never reached in FSM <nextstate[5]_dff_0>.
 	inferred   1 Finite State Machine(s).
 Unit <gen_control> synthesized.
 
-Synthesizing Unit <reg_6>.
+Synthesizing Unit <reg_3>.
     Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
         N = 5
     Found 5-bit register for signal <Q>.
     Summary:
 	inferred   5 D-type flip-flop(s).
-Unit <reg_6> synthesized.
+Unit <reg_3> synthesized.
+
+Synthesizing Unit <reg_4>.
+    Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
+        N = 128
+    Found 128-bit register for signal <Q>.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+Unit <reg_4> synthesized.
 
 Synthesizing Unit <storage>.
     Related source file is "d:/repository/xilinx/aes/src/keygen/storage.vhd".
@@ -633,25 +644,48 @@ WARNING:Xst:647 - Input <key<255:128>> is never used. This port will be preserve
 	no macro.
 Unit <storage> synthesized.
 
-Synthesizing Unit <reg_7>.
+Synthesizing Unit <reg_5>.
     Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
         N = 129
     Found 129-bit register for signal <Q>.
     Summary:
 	inferred 129 D-type flip-flop(s).
-Unit <reg_7> synthesized.
+Unit <reg_5> synthesized.
 
 Synthesizing Unit <key_interface>.
     Related source file is "d:/repository/xilinx/aes/src/keygen/key_interface.vhd".
     Found 1-bit register for signal <state>.
-    Found 129-bit 16-to-1 multiplexer for signal <debug_dataout> created at line 58.
-    Found 256-bit comparator not equal for signal <n0001> created at line 82
-    Found 2-bit comparator not equal for signal <n0003> created at line 82
+    Found 129-bit 16-to-1 multiplexer for signal <direct_dataout0> created at line 53.
+    Found 129-bit 16-to-1 multiplexer for signal <direct_dataout1> created at line 53.
+    Found 256-bit comparator not equal for signal <n0001> created at line 77
+    Found 2-bit comparator not equal for signal <n0003> created at line 77
     Summary:
 	inferred   1 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred   3 Multiplexer(s).
+	inferred   5 Multiplexer(s).
 Unit <key_interface> synthesized.
+
+Synthesizing Unit <reg_6>.
+    Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
+        N = 256
+    Found 256-bit register for signal <Q>.
+    Summary:
+	inferred 256 D-type flip-flop(s).
+Unit <reg_6> synthesized.
+
+Synthesizing Unit <reg_7>.
+    Related source file is "d:/repository/xilinx/aes/src/general/register.vhd".
+        N = 2
+    Found 2-bit register for signal <Q>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <reg_7> synthesized.
+
+Synthesizing Unit <key_mix>.
+    Related source file is "d:/repository/xilinx/aes/src/keygen/key_mix.vhd".
+    Summary:
+	no macro.
+Unit <key_mix> synthesized.
 
 Synthesizing Unit <mix_columns>.
     Related source file is "d:/repository/xilinx/aes/src/dataunit/mix_columns.vhd".
@@ -703,8 +737,8 @@ INFO:Xst:1799 - State mixadddec is never reached in FSM <nextstate[4]_dff_0>.
     Found finite state machine <FSM_1> for signal <nextstate[4]_dff_0>.
     -----------------------------------------------------------------------
     | States             | 25                                             |
-    | Transitions        | 42                                             |
-    | Inputs             | 12                                             |
+    | Transitions        | 41                                             |
+    | Inputs             | 11                                             |
     | Outputs            | 33                                             |
     | Clock              | CLK (rising_edge)                              |
     | Reset              | rst_n (negative)                               |
@@ -809,14 +843,14 @@ Unit <mux2input_3> synthesized.
 
 Synthesizing Unit <cbc>.
     Related source file is "d:/repository/xilinx/aes/src/cipher/cbc.vhd".
-WARNING:Xst:647 - Input <enc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <enc_out>.
     Found finite state machine <FSM_2> for signal <nextstate[3]_dff_0>.
     -----------------------------------------------------------------------
-    | States             | 11                                             |
-    | Transitions        | 14                                             |
+    | States             | 12                                             |
+    | Transitions        | 16                                             |
     | Inputs             | 3                                              |
-    | Outputs            | 10                                             |
+    | Outputs            | 11                                             |
     | Clock              | CLK (rising_edge)                              |
     | Reset              | rst_n (negative)                               |
     | Reset type         | asynchronous                                   |
@@ -826,9 +860,32 @@ WARNING:Xst:647 - Input <enc> is never used. This port will be preserved and lef
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Summary:
+	inferred   1 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <cbc> synthesized.
+
+Synthesizing Unit <SKMD_controller>.
+    Related source file is "d:/repository/xilinx/aes/src/aescore/skmd_controller.vhd".
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_3> for signal <nextstate[3]_dff_0>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 23                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 8                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init0                                          |
+    | Power Up State     | init0                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <SKMD_controller> synthesized.
 
 Synthesizing Unit <cap>.
     Related source file is "d:/repository/xilinx/aes/src/aescore/cap.vhd".
@@ -850,7 +907,7 @@ Synthesizing Unit <tx>.
     Found 11-bit register for signal <Rdata>.
     Found 10-bit register for signal <Rcnt>.
     Found 4-bit register for signal <Rbits>.
-    Found finite state machine <FSM_3> for signal <nextstate[1]_dff_0>.
+    Found finite state machine <FSM_4> for signal <nextstate[1]_dff_0>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 11                                             |
@@ -883,7 +940,7 @@ Synthesizing Unit <rx>.
     Found 1-bit register for signal <Rframeerr>.
     Found 1-bit register for signal <Rdatavalid>.
     Found 8-bit register for signal <Rdataout>.
-    Found finite state machine <FSM_4> for signal <nextstate[2]_dff_0>.
+    Found finite state machine <FSM_5> for signal <nextstate[2]_dff_0>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 16                                             |
@@ -906,35 +963,41 @@ Synthesizing Unit <rx>.
 	inferred   1 Finite State Machine(s).
 Unit <rx> synthesized.
 
-Synthesizing Unit <cap_controlunit>.
-    Related source file is "d:/repository/xilinx/aes/src/aescore/cap_controlunit.vhd".
-    Found 5-bit register for signal <state>.
-INFO:Xst:1799 - State terminate is never reached in FSM <nextstate[4]_dff_0>.
-    Found finite state machine <FSM_5> for signal <nextstate[4]_dff_0>.
+Synthesizing Unit <cap_tx>.
+    Related source file is "d:/repository/xilinx/aes/src/aescore/cap_tx.vhd".
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/aescore/cap_tx.vhd" line 110: Output port <ENC> of the instance <DATAPATH> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <cap_tx> synthesized.
+
+Synthesizing Unit <cap_tx_ctrlunit>.
+    Related source file is "d:/repository/xilinx/aes/src/aescore/cap_tx_ctrlunit.vhd".
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_6> for signal <nextstate[2]_dff_0>.
     -----------------------------------------------------------------------
-    | States             | 22                                             |
-    | Transitions        | 67                                             |
-    | Inputs             | 14                                             |
-    | Outputs            | 16                                             |
+    | States             | 7                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 9                                              |
     | Clock              | CLK (rising_edge)                              |
     | Reset              | rst_n (negative)                               |
     | Reset type         | asynchronous                                   |
-    | Reset State        | init0                                          |
-    | Power Up State     | init0                                          |
+    | Reset State        | init1                                          |
+    | Power Up State     | init1                                          |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Summary:
 	inferred   1 Finite State Machine(s).
-Unit <cap_controlunit> synthesized.
+Unit <cap_tx_ctrlunit> synthesized.
 
-Synthesizing Unit <cap_datapath>.
-    Related source file is "d:/repository/xilinx/aes/src/aescore/cap_datapath.vhd".
+Synthesizing Unit <cap_tx_datapath>.
+    Related source file is "d:/repository/xilinx/aes/src/aescore/cap_tx_datapath.vhd".
 WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <ENC_out>.
     Summary:
 	inferred   1 D-type flip-flop(s).
-Unit <cap_datapath> synthesized.
+Unit <cap_tx_datapath> synthesized.
 
 Synthesizing Unit <adder2input_2>.
     Related source file is "d:/repository/xilinx/aes/src/general/adder2input.vhd".
@@ -952,6 +1015,41 @@ Synthesizing Unit <reg_9>.
 	inferred   6 D-type flip-flop(s).
 Unit <reg_9> synthesized.
 
+Synthesizing Unit <cap_rx>.
+    Related source file is "d:/repository/xilinx/aes/src/aescore/cap_rx.vhd".
+    Summary:
+	no macro.
+Unit <cap_rx> synthesized.
+
+Synthesizing Unit <cap_rx_ctrlunit>.
+    Related source file is "d:/repository/xilinx/aes/src/aescore/cap_rx_ctrluniut.vhd".
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_7> for signal <nextstate[3]_dff_0>.
+    -----------------------------------------------------------------------
+    | States             | 15                                             |
+    | Transitions        | 52                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 10                                             |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init0                                          |
+    | Power Up State     | init0                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <cap_rx_ctrlunit> synthesized.
+
+Synthesizing Unit <cap_rx_datapath>.
+    Related source file is "d:/repository/xilinx/aes/src/aescore/cap_rx_datapath.vhd".
+WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <ENC_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <cap_rx_datapath> synthesized.
+
 Synthesizing Unit <mux2input_4>.
     Related source file is "d:/repository/xilinx/aes/src/general/mux2inputs.vhd".
         N = 2
@@ -965,54 +1063,54 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x32-bit single-port Read Only RAM                   : 1
-# Adders/Subtractors                                   : 9
+# Adders/Subtractors                                   : 12
  11-bit adder                                          : 2
- 4-bit adder                                           : 3
- 4-bit subtractor                                      : 1
+ 4-bit adder                                           : 4
+ 4-bit subtractor                                      : 2
  5-bit adder                                           : 2
- 6-bit adder                                           : 1
-# Registers                                            : 166
- 1-bit register                                        : 24
+ 6-bit adder                                           : 2
+# Registers                                            : 235
+ 1-bit register                                        : 33
  10-bit register                                       : 3
  11-bit register                                       : 1
- 128-bit register                                      : 2
+ 128-bit register                                      : 3
  129-bit register                                      : 14
- 2-bit register                                        : 3
- 256-bit register                                      : 2
- 32-bit register                                       : 12
- 4-bit register                                        : 29
+ 2-bit register                                        : 4
+ 256-bit register                                      : 3
+ 32-bit register                                       : 16
+ 4-bit register                                        : 42
  5-bit register                                        : 1
- 6-bit register                                        : 1
- 8-bit register                                        : 74
+ 6-bit register                                        : 2
+ 8-bit register                                        : 113
 # Comparators                                          : 2
  2-bit comparator not equal                            : 1
  256-bit comparator not equal                          : 1
-# Multiplexers                                         : 340
- 1-bit 2-to-1 multiplexer                              : 1
+# Multiplexers                                         : 620
+ 1-bit 2-to-1 multiplexer                              : 2
  11-bit 2-to-1 multiplexer                             : 2
  11-bit 3-to-1 multiplexer                             : 1
- 128-bit 2-to-1 multiplexer                            : 2
- 129-bit 16-to-1 multiplexer                           : 1
- 2-bit 2-to-1 multiplexer                              : 26
- 3-bit 2-to-1 multiplexer                              : 6
+ 128-bit 2-to-1 multiplexer                            : 4
+ 129-bit 16-to-1 multiplexer                           : 2
+ 2-bit 2-to-1 multiplexer                              : 39
+ 3-bit 2-to-1 multiplexer                              : 12
  32-bit 2-to-1 multiplexer                             : 10
- 32-bit 4-to-1 multiplexer                             : 6
+ 32-bit 4-to-1 multiplexer                             : 7
  4-bit 2-to-1 multiplexer                              : 2
  5-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 260
- 8-bit 4-to-1 multiplexer                              : 5
- 8-bit 7-to-1 multiplexer                              : 16
-# FSMs                                                 : 6
-# Xors                                                 : 7440
- 1-bit xor2                                            : 5928
- 1-bit xor3                                            : 8
- 1-bit xor4                                            : 120
- 1-bit xor5                                            : 8
- 1-bit xor6                                            : 16
+ 8-bit 2-to-1 multiplexer                              : 496
+ 8-bit 4-to-1 multiplexer                              : 9
+ 8-bit 7-to-1 multiplexer                              : 32
+# FSMs                                                 : 10
+# Xors                                                 : 14508
+ 1-bit xor2                                            : 11580
+ 1-bit xor3                                            : 12
+ 1-bit xor4                                            : 180
+ 1-bit xor5                                            : 12
+ 1-bit xor6                                            : 24
  32-bit xor2                                           : 8
- 4-bit xor2                                            : 24
- 8-bit xor2                                            : 1072
- 8-bit xor4                                            : 256
+ 4-bit xor2                                            : 36
+ 8-bit xor2                                            : 2144
+ 8-bit xor4                                            : 512
 
 =========================================================================
 
@@ -1020,6 +1118,8 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <KEYIN> is unconnected in block <DL1>.
+   It will be removed from the design.
 WARNING:Xst:1710 - FF/Latch <enc_sync> (without init value) has a constant value of 1 in block <SBX1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <enc_sync> (without init value) has a constant value of 1 in block <SBX2>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <enc_sync> (without init value) has a constant value of 1 in block <SBX3>. This FF/Latch will be trimmed during the optimization process.
@@ -1030,9 +1130,13 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enc1> (without init
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enc1> (without init value) has a constant value of 1 in block <SBX4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <Rdata[9]_dff_14_0> of sequential type is unconnected in block <RXDEV>.
 
-Synthesizing (advanced) Unit <cap_datapath>.
+Synthesizing (advanced) Unit <cap_rx_datapath>.
 The following registers are absorbed into counter <COUNT0/Q[5]_dff_1>: 1 register on signal <COUNT0/Q[5]_dff_1>.
-Unit <cap_datapath> synthesized (advanced).
+Unit <cap_rx_datapath> synthesized (advanced).
+
+Synthesizing (advanced) Unit <cap_tx_datapath>.
+The following registers are absorbed into counter <COUNT0/Q[5]_dff_1>: 1 register on signal <COUNT0/Q[5]_dff_1>.
+Unit <cap_tx_datapath> synthesized (advanced).
 
 Synthesizing (advanced) Unit <gen_datapath>.
 The following registers are absorbed into counter <CUREC/Q[3]_dff_1>: 1 register on signal <CUREC/Q[3]_dff_1>.
@@ -1060,50 +1164,83 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x32-bit single-port distributed Read Only RAM       : 1
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 8
  11-bit adder                                          : 2
- 4-bit adder                                           : 1
- 4-bit subtractor                                      : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 2
  5-bit adder                                           : 2
-# Counters                                             : 3
+# Counters                                             : 4
  4-bit up counter                                      : 2
- 6-bit up counter                                      : 1
-# Registers                                            : 3733
- Flip-Flops                                            : 3733
+ 6-bit up counter                                      : 2
+# Registers                                            : 4620
+ Flip-Flops                                            : 4620
 # Comparators                                          : 2
  2-bit comparator not equal                            : 1
  256-bit comparator not equal                          : 1
-# Multiplexers                                         : 393
- 1-bit 2-to-1 multiplexer                              : 64
+# Multiplexers                                         : 701
+ 1-bit 2-to-1 multiplexer                              : 97
  11-bit 2-to-1 multiplexer                             : 2
  11-bit 3-to-1 multiplexer                             : 1
- 128-bit 2-to-1 multiplexer                            : 2
- 129-bit 16-to-1 multiplexer                           : 1
- 2-bit 2-to-1 multiplexer                              : 26
- 3-bit 2-to-1 multiplexer                              : 6
+ 128-bit 2-to-1 multiplexer                            : 4
+ 129-bit 16-to-1 multiplexer                           : 2
+ 2-bit 2-to-1 multiplexer                              : 39
+ 3-bit 2-to-1 multiplexer                              : 12
  32-bit 2-to-1 multiplexer                             : 10
- 32-bit 4-to-1 multiplexer                             : 6
+ 32-bit 4-to-1 multiplexer                             : 7
  5-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 252
- 8-bit 4-to-1 multiplexer                              : 5
- 8-bit 7-to-1 multiplexer                              : 16
-# FSMs                                                 : 6
-# Xors                                                 : 7440
- 1-bit xor2                                            : 5928
- 1-bit xor3                                            : 8
- 1-bit xor4                                            : 120
- 1-bit xor5                                            : 8
- 1-bit xor6                                            : 16
+ 8-bit 2-to-1 multiplexer                              : 484
+ 8-bit 4-to-1 multiplexer                              : 9
+ 8-bit 7-to-1 multiplexer                              : 32
+# FSMs                                                 : 10
+# Xors                                                 : 14508
+ 1-bit xor2                                            : 11580
+ 1-bit xor3                                            : 12
+ 1-bit xor4                                            : 180
+ 1-bit xor5                                            : 12
+ 1-bit xor6                                            : 24
  32-bit xor2                                           : 8
- 4-bit xor2                                            : 24
- 8-bit xor2                                            : 1072
- 8-bit xor4                                            : 256
+ 4-bit xor2                                            : 36
+ 8-bit xor2                                            : 2144
+ 8-bit xor4                                            : 512
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2973 - All outputs of instance <AES1/DL1/KEYIN> of block <reg_6> are unconnected in block <aescore>. Underlying logic will be removed.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <AES1/DL1/nextstate[3]_dff_0> on signal <nextstate[3]_dff_0[1:12]> with one-hot encoding.
+Optimizing FSM <AES1/DL0/nextstate[3]_dff_0> on signal <nextstate[3]_dff_0[1:12]> with one-hot encoding.
+---------------------------
+ State     | Encoding
+---------------------------
+ init0     | 000000000001
+ notready  | 000000000010
+ wait0     | 000000000100
+ round0    | 100000000000
+ round1    | 000000010000
+ round2    | 000000100000
+ round3    | 000001000000
+ load0     | 000000001000
+ load1     | 000100000000
+ load2     | 001000000000
+ load3     | 010000000000
+ printout0 | 000010000000
+---------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <TRANSM/TX/CTRLUNIT/nextstate[2]_dff_0> on signal <nextstate[2]_dff_0[1:3]> with sequential encoding.
+------------------------
+ State      | Encoding
+------------------------
+ init1      | 000
+ wait4      | 011
+ loaddata   | 001
+ writedata0 | 101
+ writedata1 | 100
+ writedata2 | 110
+ writedata3 | 010
+------------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <TRANSM/SER/TXDEV/nextstate[1]_dff_0> on signal <nextstate[1]_dff_0[1:2]> with gray encoding.
 ----------------------
@@ -1127,33 +1264,26 @@ Optimizing FSM <TRANSM/SER/RXDEV/nextstate[2]_dff_0> on signal <nextstate[2]_dff
  check_stop      | 111
 -----------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <TRANSM/CTRLUNIT/nextstate[4]_dff_0> on signal <nextstate[4]_dff_0[1:21]> with one-hot encoding.
--------------------------------------
- State      | Encoding
--------------------------------------
- init0      | 000000000000000000001
- readdata1  | 000000000000000000100
- readdata2  | 000000000000000000010
- readdata3  | 000000000000000001000
- readdata4  | 000000000000010000000
- readdata5  | 000000000000001000000
- readdata6  | 000000000000000100000
- readdata7  | 000000000000100000000
- readdata8  | 000000000010000000000
- wait1      | 000000000000000010000
- wait2      | 000000000001000000000
- wait3      | 000000000100000000000
- wait4      | 000000100000000000000
- useless1   | 000000001000000000000
- useless2   | 000010000000000000000
- cipherload | 000001000000000000000
- loaddata   | 000100000000000000000
- writedata0 | 010000000000000000000
- writedata1 | 001000000000000000000
- writedata2 | 100000000000000000000
- writedata3 | 000000010000000000000
- terminate  | unreached
--------------------------------------
+Optimizing FSM <TRANSM/RX/CTRLUNIT/nextstate[3]_dff_0> on signal <nextstate[3]_dff_0[1:4]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ init0       | 0000
+ readdata1   | 0011
+ readdata2   | 0001
+ readdata3   | 0010
+ readdata4   | 0100
+ readdata5   | 0101
+ readdata6   | 0111
+ readdata7   | 1100
+ readdata8   | 1111
+ wait1       | 0110
+ wait2       | 1101
+ wait3       | 1110
+ useless1    | 1010
+ cipherload  | 1011
+ cipherload2 | 1001
+-------------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0> on signal <nextstate[5]_dff_0[1:29]> with one-hot encoding.
 ------------------------------------------
@@ -1200,7 +1330,8 @@ Optimizing FSM <AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0> on signal <nextstate
  wait22  | unreached
 ------------------------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <AES1/DUNIT/CONTROLUNIT/nextstate[4]_dff_0> on signal <nextstate[4]_dff_0[1:23]> with one-hot encoding.
+Optimizing FSM <AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0> on signal <nextstate[4]_dff_0[1:23]> with one-hot encoding.
+Optimizing FSM <AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0> on signal <nextstate[4]_dff_0[1:23]> with one-hot encoding.
 ---------------------------------------
  State      | Encoding
 ---------------------------------------
@@ -1231,40 +1362,45 @@ Optimizing FSM <AES1/DUNIT/CONTROLUNIT/nextstate[4]_dff_0> on signal <nextstate[
  useless0   | 00000000000000000000010
 ---------------------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <AES1/DL/nextstate[3]_dff_0> on signal <nextstate[3]_dff_0[1:11]> with one-hot encoding.
--------------------------
- State    | Encoding
--------------------------
- init0    | 00000000001
- notready | 00000000010
- round0   | 10000000000
- round1   | 00000001000
- round2   | 00000010000
- round3   | 00000100000
- load0    | 00000000100
- load1    | 00010000000
- load2    | 00100000000
- load3    | 01000000000
- printout | 00001000000
--------------------------
+Optimizing FSM <AES1/SKMD/nextstate[3]_dff_0> on signal <nextstate[3]_dff_0[1:4]> with gray encoding.
+--------------------
+ State  | Encoding
+--------------------
+ init0  | 0000
+ wait0  | 0011
+ wait1  | 0110
+ wait2  | 0101
+ wait3  | 1100
+ load0  | 0001
+ load1  | 0010
+ write0 | 0111
+ write1 | 0100
+ resetd | 1101
+--------------------
 WARNING:Xst:1710 - FF/Latch <Rdata[10]_dff_10_9> (without init value) has a constant value of 1 in block <tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Rdata[10]_dff_10_10> (without init value) has a constant value of 1 in block <tx>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <aescore> ...
 
-Optimizing unit <cap_datapath> ...
+Optimizing unit <cap_tx_datapath> ...
 
 Optimizing unit <reg_8> ...
+
+Optimizing unit <cap_tx_ctrlunit> ...
 
 Optimizing unit <tx> ...
 
 Optimizing unit <rx> ...
 
-Optimizing unit <cap_controlunit> ...
+Optimizing unit <cap_rx_ctrlunit> ...
 
-Optimizing unit <cipher> ...
+Optimizing unit <cap_rx_datapath> ...
 
-Optimizing unit <reg_3> ...
+Optimizing unit <reg_4> ...
+
+Optimizing unit <reg_6> ...
+
+Optimizing unit <reg_2> ...
 
 Optimizing unit <key_interface> ...
 
@@ -1274,8 +1410,6 @@ Optimizing unit <sbox> ...
 
 Optimizing unit <inv8> ...
 
-Optimizing unit <reg_5> ...
-
 Optimizing unit <gen_control> ...
 
 Optimizing unit <storage> ...
@@ -1284,25 +1418,32 @@ Optimizing unit <dataunit_datapath> ...
 
 Optimizing unit <dataunit_control> ...
 
-Optimizing unit <cbc> ...
+Optimizing unit <SKMD_controller> ...
 WARNING:Xst:1710 - FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX4/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX3/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX2/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX1/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX3/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX2/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX1/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX4/enc1> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX3/enc1> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX2/enc1> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX1/enc1> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <TRANSM/TX/DATAPATH/ENC_out> of sequential type is unconnected in block <aescore>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-INFO:Xst:2261 - The FF/Latch <AES1/DUNIT/DATAPATH/SBOX0/enc_sync> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT/DATAPATH/SBOX1/enc_sync> <AES1/DUNIT/DATAPATH/SBOX2/enc_sync> <AES1/DUNIT/DATAPATH/SBOX3/enc_sync> 
-INFO:Xst:2261 - The FF/Latch <AES1/DUNIT/DATAPATH/SBOX0/enc1> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT/DATAPATH/SBOX1/enc1> <AES1/DUNIT/DATAPATH/SBOX2/enc1> <AES1/DUNIT/DATAPATH/SBOX3/enc1> 
-Found area constraint ratio of 100 (+ 5) on block aescore, actual ratio is 27.
-FlipFlop AES1/DUNIT/DATAPATH/ROUND1/Q[3]_dff_1_0 has been replicated 17 time(s)
-FlipFlop AES1/DUNIT/DATAPATH/ROUND1/Q[3]_dff_1_1 has been replicated 1 time(s)
-FlipFlop AES1/DUNIT/DATAPATH/ROUND1/Q[3]_dff_1_2 has been replicated 1 time(s)
-FlipFlop AES1/DUNIT/DATAPATH/ROUND1/Q[3]_dff_1_3 has been replicated 1 time(s)
+INFO:Xst:2261 - The FF/Latch <AES1/DUNIT1/DATAPATH/SBOX0/enc_sync> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT1/DATAPATH/SBOX1/enc_sync> <AES1/DUNIT1/DATAPATH/SBOX2/enc_sync> <AES1/DUNIT1/DATAPATH/SBOX3/enc_sync> 
+INFO:Xst:2261 - The FF/Latch <AES1/DUNIT0/DATAPATH/SBOX0/enc_sync> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT0/DATAPATH/SBOX1/enc_sync> <AES1/DUNIT0/DATAPATH/SBOX2/enc_sync> <AES1/DUNIT0/DATAPATH/SBOX3/enc_sync> 
+INFO:Xst:2261 - The FF/Latch <AES1/DUNIT0/DATAPATH/SBOX0/enc1> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT0/DATAPATH/SBOX1/enc1> <AES1/DUNIT0/DATAPATH/SBOX2/enc1> <AES1/DUNIT0/DATAPATH/SBOX3/enc1> 
+INFO:Xst:2261 - The FF/Latch <AES1/DUNIT1/DATAPATH/SBOX0/enc1> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT1/DATAPATH/SBOX1/enc1> <AES1/DUNIT1/DATAPATH/SBOX2/enc1> <AES1/DUNIT1/DATAPATH/SBOX3/enc1> 
+Found area constraint ratio of 100 (+ 5) on block aescore, actual ratio is 36.
+FlipFlop AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0 has been replicated 17 time(s)
+FlipFlop AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_1 has been replicated 1 time(s)
+FlipFlop AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_2 has been replicated 1 time(s)
+FlipFlop AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_3 has been replicated 1 time(s)
+FlipFlop AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0 has been replicated 17 time(s)
+FlipFlop AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_1 has been replicated 1 time(s)
+FlipFlop AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2 has been replicated 1 time(s)
+FlipFlop AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_3 has been replicated 1 time(s)
 FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd10 has been replicated 2 time(s)
 FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd22 has been replicated 1 time(s)
 FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd9 has been replicated 2 time(s)
@@ -1317,18 +1458,19 @@ Final Macro Processing ...
 
 Processing Unit <aescore> :
 	Found 2-bit shift register for signal <TRANSM/SER/RXD_s2>.
-	Found 4-bit shift register for signal <AES1/DUNIT/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd10>.
+	Found 4-bit shift register for signal <AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd10>.
+	Found 4-bit shift register for signal <AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd10>.
 Unit <aescore> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 3848
- Flip-Flops                                            : 3848
-# Shift Registers                                      : 2
+# Registers                                            : 4520
+ Flip-Flops                                            : 4520
+# Shift Registers                                      : 3
  2-bit shift register                                  : 1
- 4-bit shift register                                  : 1
+ 4-bit shift register                                  : 2
 
 =========================================================================
 
@@ -1351,28 +1493,27 @@ Top Level Output File Name         : aescore.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4986
+# BELS                             : 7904
 #      GND                         : 1
-#      INV                         : 35
-#      LUT2                        : 110
-#      LUT3                        : 257
-#      LUT4                        : 197
-#      LUT5                        : 1117
-#      LUT6                        : 2488
+#      INV                         : 34
+#      LUT2                        : 167
+#      LUT3                        : 199
+#      LUT4                        : 342
+#      LUT5                        : 1705
+#      LUT6                        : 4062
 #      MUXCY                       : 86
-#      MUXF7                       : 565
-#      MUXF8                       : 129
+#      MUXF7                       : 1049
+#      MUXF8                       : 258
 #      VCC                         : 1
-# FlipFlops/Latches                : 3854
-#      FD                          : 172
-#      FDC                         : 91
-#      FDCE                        : 3530
-#      FDE                         : 57
-#      FDP                         : 4
-# Shift Registers                  : 2
-#      SRLC16E                     : 2
-# Clock Buffers                    : 2
-#      BUFG                        : 1
+# FlipFlops/Latches                : 4531
+#      FD                          : 253
+#      FDC                         : 112
+#      FDCE                        : 4103
+#      FDE                         : 58
+#      FDP                         : 5
+# Shift Registers                  : 3
+#      SRLC16E                     : 3
+# Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 12
 #      IBUF                        : 3
@@ -1385,25 +1526,25 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            3854  out of  54576     7%  
- Number of Slice LUTs:                 4206  out of  27288    15%  
-    Number used as Logic:              4204  out of  27288    15%  
-    Number used as Memory:                2  out of   6408     0%  
-       Number used as SRL:                2
+ Number of Slice Registers:            4531  out of  54576     8%  
+ Number of Slice LUTs:                 6512  out of  27288    23%  
+    Number used as Logic:              6509  out of  27288    23%  
+    Number used as Memory:                3  out of   6408     0%  
+       Number used as SRL:                3
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7173
-   Number with an unused Flip Flop:    3319  out of   7173    46%  
-   Number with an unused LUT:          2967  out of   7173    41%  
-   Number of fully used LUT-FF pairs:   887  out of   7173    12%  
-   Number of unique control sets:        49
+ Number of LUT Flip Flop pairs used:   9949
+   Number with an unused Flip Flop:    5418  out of   9949    54%  
+   Number with an unused LUT:          3437  out of   9949    34%  
+   Number of fully used LUT-FF pairs:  1094  out of   9949    10%  
+   Number of unique control sets:        60
 
 IO Utilization: 
  Number of IOs:                          13
  Number of bonded IOBs:                  13  out of    218     5%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1426,8 +1567,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 486   |
-CLK_new                            | BUFG                   | 3370  |
+CLK                                | BUFGP                  | 4534  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1439,8 +1579,8 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 8.546ns (Maximum Frequency: 117.013MHz)
-   Minimum input arrival time before clock: 4.930ns
-   Maximum output required time after clock: 3.856ns
+   Minimum input arrival time before clock: 6.466ns
+   Maximum output required time after clock: 6.546ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1449,39 +1589,16 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 5.288ns (frequency: 189.120MHz)
-  Total number of paths / destination ports: 3285 / 1341
--------------------------------------------------------------------------
-Delay:               5.288ns (Levels of Logic = 2)
-  Source:            TRANSM/DATAPATH/COUNT0/Q[5]_dff_1_2 (FF)
-  Destination:       TRANSM/DATAPATH/DATA15/Q[7]_dff_1_7 (FF)
-  Source Clock:      CLK rising
-  Destination Clock: CLK rising
-
-  Data Path: TRANSM/DATAPATH/COUNT0/Q[5]_dff_1_2 to TRANSM/DATAPATH/DATA15/Q[7]_dff_1_7
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             8   0.525   1.079  TRANSM/DATAPATH/COUNT0/Q[5]_dff_1_2 (TRANSM/DATAPATH/COUNT0/Q[5]_dff_1_2)
-     LUT4:I0->O            5   0.254   0.943  TRANSM/CTRLUNIT/nextstate[4]_dff_0_FSM_FFd21-In11 (TRANSM/CTRLUNIT/N10)
-     LUT6:I3->O          128   0.235   1.950  TRANSM/CTRLUNIT/nextstate[4]_dff_0_load_DATA (TRANSM/load_DATA)
-     FDCE:CE                   0.302          TRANSM/DATAPATH/DATA15/Q[7]_dff_1_0
-    ----------------------------------------
-    Total                      5.288ns (1.316ns logic, 3.972ns route)
-                                       (24.9% logic, 75.1% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'CLK_new'
   Clock period: 8.546ns (frequency: 117.013MHz)
-  Total number of paths / destination ports: 290513 / 8366
+  Total number of paths / destination ports: 433648 / 12238
 -------------------------------------------------------------------------
 Delay:               8.546ns (Levels of Logic = 7)
   Source:            AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2 (FF)
-  Destination:       AES1/KGEN/GEN/DATPATH1/REGw7/Q[31]_dff_1_30 (FF)
-  Source Clock:      CLK_new rising
-  Destination Clock: CLK_new rising
+  Destination:       AES1/KGEN/GEN/DATPATH1/REGw2/Q[31]_dff_1_30 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
 
-  Data Path: AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2 to AES1/KGEN/GEN/DATPATH1/REGw7/Q[31]_dff_1_30
+  Data Path: AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2 to AES1/KGEN/GEN/DATPATH1/REGw2/Q[31]_dff_1_30
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1490,7 +1607,7 @@ Delay:               8.546ns (Levels of Logic = 7)
      LUT6:I2->O            7   0.254   0.774  AES1/KGEN/GEN/DATPATH1/SBX1/INV1/MUL2/Mxor_q<1>_xo<0> (AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig9<1>)
      LUT6:I5->O            7   0.254   1.204  AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INVMAP1/Mxor_a<5>_xo<0>1 (AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>)
      LUT6:I1->O            5   0.254   0.715  AES1/KGEN/GEN/DATPATH1/Mxor_x1w0_30_xo<0>11 (AES1/KGEN/GEN/DATPATH1/N3)
-     LUT5:I4->O            1   0.254   0.808  AES1/KGEN/GEN/DATPATH1/MUX6/Mmux_Y241_SW1 (N396)
+     LUT5:I4->O            1   0.254   0.808  AES1/KGEN/GEN/DATPATH1/MUX6/Mmux_Y241_SW1 (N809)
      LUT6:I3->O            6   0.235   0.745  AES1/KGEN/GEN/DATPATH1/MUX7/Y<30>1 (AES1/KGEN/GEN/DATPATH1/t6<30>)
      LUT4:I3->O            1   0.254   0.000  AES1/KGEN/GEN/DATPATH1/MUXw6/Mmux_Y241 (AES1/KGEN/GEN/DATPATH1/w6sel<30>)
      FDCE:D                    0.074          AES1/KGEN/GEN/DATPATH1/REGw6/Q[31]_dff_1_30
@@ -1500,74 +1617,56 @@ Delay:               8.546ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 433 / 433
+  Total number of paths / destination ports: 1998 / 1998
 -------------------------------------------------------------------------
-Offset:              4.907ns (Levels of Logic = 2)
+Offset:              6.466ns (Levels of Logic = 3)
   Source:            rst_n (PAD)
-  Destination:       TRANSM/SER/TXDEV/nextstate[1]_dff_0_FSM_FFd2 (FF)
+  Destination:       AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_0 (FF)
   Destination Clock: CLK rising
 
-  Data Path: rst_n to TRANSM/SER/TXDEV/nextstate[1]_dff_0_FSM_FFd2
+  Data Path: rst_n to AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             9   1.228   0.829  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            708   0.255   2.137  TRANSM/SER/TXDEV/rst_n_inv1_INV_0 (AES1/DL/rst_n_inv)
-     FDC:CLR                   0.459          TRANSM/CTRLUNIT/nextstate[4]_dff_0_FSM_FFd19
+     IBUF:I->O            16   1.228   1.233  rst_n_IBUF (rst_n_IBUF)
+     LUT3:I0->O            2   0.235   1.047  AES1/SKMD/resetCBC1 (AES1/resetCBC)
+     LUT5:I0->O          152   0.254   2.010  AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/rst_n_inv1 (AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/rst_n_inv)
+     FDCE:CLR                  0.459          AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_0
     ----------------------------------------
-    Total                      4.907ns (1.942ns logic, 2.965ns route)
-                                       (39.6% logic, 60.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_new'
-  Total number of paths / destination ports: 966 / 966
--------------------------------------------------------------------------
-Offset:              4.930ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
-  Destination:       AES1/DL/D0/Q[31]_dff_1_0 (FF)
-  Destination Clock: CLK_new rising
-
-  Data Path: rst_n to AES1/DL/D0/Q[31]_dff_1_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             9   1.228   1.058  rst_n_IBUF (rst_n_IBUF)
-     LUT3:I0->O          128   0.235   1.950  AES1/DL/D0/rst_n_inv1 (AES1/DL/D0/rst_n_inv)
-     FDCE:CLR                  0.459          AES1/DL/D0/Q[31]_dff_1_0
-    ----------------------------------------
-    Total                      4.930ns (1.922ns logic, 3.008ns route)
-                                       (39.0% logic, 61.0% route)
+    Total                      6.466ns (2.176ns logic, 4.290ns route)
+                                       (33.7% logic, 66.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 9 / 9
+  Total number of paths / destination ports: 49 / 9
 -------------------------------------------------------------------------
-Offset:              3.856ns (Levels of Logic = 1)
-  Source:            TRANSM/DATAPATH/SESSIO0/Q[7]_dff_1_7 (FF)
+Offset:              6.546ns (Levels of Logic = 2)
+  Source:            AES1/SKMD/nextstate[3]_dff_0_FSM_FFd2 (FF)
   Destination:       test_out<7> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: TRANSM/DATAPATH/SESSIO0/Q[7]_dff_1_7 to test_out<7>
+  Data Path: AES1/SKMD/nextstate[3]_dff_0_FSM_FFd2 to test_out<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.525   0.616  TRANSM/DATAPATH/SESSIO0/Q[7]_dff_1_7 (TRANSM/DATAPATH/SESSIO0/Q[7]_dff_1_7)
+     FDC:C->Q            149   0.525   2.436  AES1/SKMD/nextstate[3]_dff_0_FSM_FFd2 (AES1/SKMD/nextstate[3]_dff_0_FSM_FFd2)
+     LUT6:I1->O            2   0.254   0.616  AES1/SKMD/Mmux_session_out81 (test_out_7_OBUF)
      OBUF:I->O                 2.715          test_out_7_OBUF (test_out<7>)
     ----------------------------------------
-    Total                      3.856ns (3.240ns logic, 0.616ns route)
-                                       (84.0% logic, 16.0% route)
+    Total                      6.546ns (3.494ns logic, 3.052ns route)
+                                       (53.4% logic, 46.6% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 65.00 secs
-Total CPU time to Xst completion: 64.69 secs
+Total REAL time to Xst completion: 84.00 secs
+Total CPU time to Xst completion: 83.28 secs
  
 --> 
 
-Total memory usage is 304616 kilobytes
+Total memory usage is 360680 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   40 (   0 filtered)
-Number of infos    :   32 (   0 filtered)
+Number of warnings :   30 (   0 filtered)
+Number of infos    :   44 (   0 filtered)
 

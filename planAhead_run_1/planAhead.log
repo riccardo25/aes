@@ -1,0 +1,63 @@
+INFO: [HD-Application 1] Opened log file D:/Repository/XILINX/aes/planAhead_run_1/planAhead.log
+INFO: [HD-Application 2] Opened journal file D:/Repository/XILINX/aes/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+# PlanAhead v12.1
+# Build 61553 by hdbuild on Fri Apr 23 10:13:54 PDT 2010
+# Start of session at: 10/8/18 4:49:28 PM
+# Process ID: 13472
+#-----------------------------------------------------------
+source D:/Repository/XILINX/aes/pa.fromNcd.tcl
+# create_project -name aes -dir "D:/Repository/XILINX/aes/planAhead_run_2" -part xc6slx45csg324-3
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "D:/Repository/XILINX/aes/aescore.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/Repository/XILINX/aes} }
+# set_param project.paUcfFile  "D:/Repository/XILINX/aeswithusb/pins.ucf"
+# add_files "D:/Repository/XILINX/aeswithusb/pins.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Run is defaulting to constrset part: xc6slx45csg324-3
+INFO: [HD-EDIFIN 0] Parsing Edif File '.\.HDI-PlanAhead-13472-pc-Riccardo\ngc2edif\aescore.edif'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File '.\.HDI-PlanAhead-13472-pc-Riccardo\ngc2edif\aescore.edif'
+INFO: [HD-Unisim Transformer 0] Analyzing 1 legacy Unisim elements for replacement
+INFO: [HD-Unisim Transformer 1] No Unisim elements were transformed.
+WARN: [HD-NETLIST 3] Netlist 'aescore' is not ideal for floorplanning, since the cellview 'aescore' defined in file 'aescore.ngc' contains large number of primitives. Please consider enabling hierarchy in synthesis before floorplan. You can enable hierarchy in XST by setting '-keep_hierarchy=yes' or '-netlist_hierarchy=rebuilt' flags.
+INFO: [HD-ArchReader 7] Loading clock regions from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+INFO: [HD-ArchReader 3] Loading package from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx45/csg324/Package.xml
+INFO: [HD-ArchReader 13] Loading package pin functions from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/PinFunctions.xml...
+INFO: [HD-ArchReader 4] Loading io standards from C:/Xilinx/12.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/IOStandards.xml
+INFO: [HD-ArchReader 12] Loading device configuration modes from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/ConfigModes.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : C:/Xilinx/12.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/drc.xml
+INFO: [HD-UCFReader 0] Parsing UCF File : .withusb\pins.ucf
+INFO: [HD-UCFReader 1] Finished Parsing UCF File : .withusb\pins.ucf
+
+DESIGN RULE CHECK VIOLATION REPORT
+   Build: PlanAhead v12.1 by hdbuild
+          on  Fri Apr 23 10:13:54 PDT 2010
+  Report: by Riccardo on host pc-Riccardo, pid 13472
+          on Mon Oct 08 16:49:39 2018
+
+REPORT SUMMARY
+            Netlist: synth_results
+          Floorplan: <none>
+      Design limits: <entire design considered>
+             Checks: Mismatching Block
+                     Mismatching Pin
+                     Mismatching Attribute
+           Max vios: <unlimited>
+         Vios found: 0
+
+REPORT DETAILS
+INFO: [HD-LIB 0] Reading timing library C:/Xilinx/12.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+INFO: [HD-LIB 1] Done reading timing library C:/Xilinx/12.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+# read_xdl -file "D:/Repository/XILINX/aes/aescore.ncd"
+INFO: [HD-PAR 0] Parsing Placement File : D:/Repository/XILINX/aes/aescore.ncd
+INFO: [HD-PAR 1] Finished Parsing Placement File : D:/Repository/XILINX/aes/aescore.ncd
+INFO: [HD-PAR 2] Placed 8854 instances
+# if {[catch {read_twx -name results_1 -file "D:/Repository/XILINX/aes/aescore.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"D:/Repository/XILINX/aes/aescore.twx\": $eInfo"
+# }
+#-----------------------------------------------------------
+# End of session at: 10/8/18 4:51:48 PM
+# Process ID: 13472
+#-----------------------------------------------------------

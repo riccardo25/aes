@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="6">
+	<FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+		<Filter Type="EDIFSrcs"/>
+		<Root Path="D:/Repository/XILINX/aes" Recursive="FALSE">
+		</Root>
+		<Root Path="D:/Repository/XILINX/aes" Recursive="FALSE">
+		</Root>
+		<Config>
+			<Option Name="DesignMode" Val="GateLvl"/>
+			<Option Name="GateLvlMode" Val="EDIF"/>
+			<Option Name="TopFile" Val="D:/Repository/XILINX/aes/aescore.ngc"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

@@ -1,0 +1,17 @@
+INFO: [HD-Application 1] Opened log file D:/Repository/XILINX/aes/planAhead_run_2/planAhead.log
+INFO: [HD-Application 2] Opened journal file D:/Repository/XILINX/aes/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+# PlanAhead v12.1
+# Build 61553 by hdbuild on Fri Apr 23 10:13:54 PDT 2010
+# Start of session at: 10/8/18 4:49:29 PM
+# Process ID: 2968
+#-----------------------------------------------------------
+source D:/Repository/XILINX/aes/pa.fromNcd.tcl
+# create_project -name aes -dir "D:/Repository/XILINX/aes/planAhead_run_2" -part xc6slx45csg324-3
+ERROR: [HD-DB 2] Project already exists on disk, please use '-w' option to overwrite: 
+     D:\Repository\XILINX\aes\planAhead_run_2\aes.ppr
+     D:\Repository\XILINX\aes\planAhead_run_2\aes.data
+#-----------------------------------------------------------
+# End of session at: 10/8/18 4:49:49 PM
+# Process ID: 2968
+#-----------------------------------------------------------

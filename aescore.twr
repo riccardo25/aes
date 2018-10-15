@@ -15,7 +15,6 @@ Environment Variable      Effect
 NONE                      No environment variables were set
 --------------------------------------------------------------------------------
 
-INFO:Timing:2698 - No timing constraints found, doing default enumeration.
 INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
    option. All paths that are not constrained will be reported in the 
    unconstrained paths section(s) of the report.
@@ -24,55 +23,581 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
    and for more information on accounting for different loading conditions, 
    please see the device datasheet.
 
+================================================================================
+Timing constraint: TS_CLK = PERIOD TIMEGRP "CLK" 10 ns HIGH 50%;
+
+ 433645 paths analyzed, 18355 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.953ns.
+--------------------------------------------------------------------------------
+
+Paths for end point AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7 (SLICE_X16Y42.D2), 331 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.047ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES1/KGEN/INTE/regKEY/Q[255]_dff_1_84 (FF)
+  Destination:          AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.886ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.032ns (0.505 - 0.537)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: AES1/KGEN/INTE/regKEY/Q[255]_dff_1_84 to AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y26.CQ      Tcko                  0.430   AES1/KGEN/INTE/regKEY/Q[255]_dff_1<86>
+                                                       AES1/KGEN/INTE/regKEY/Q[255]_dff_1_84
+    SLICE_X36Y30.A1      net (fanout=6)        2.690   AES1/KGEN/INTE/regKEY/Q[255]_dff_1<84>
+    SLICE_X36Y30.BMUX    Topab                 0.438   AES1/KGEN/STORE_k/R12/Q[128]_dff_1<77>
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout0_4111
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout0_3_f7_110
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout0_2_f8_110
+    SLICE_X17Y38.C2      net (fanout=12)       3.576   AES1/KGEN/INTE/direct_dataout0<84>
+    SLICE_X17Y38.C       Tilo                  0.259   AES1/KGEN/STORE_k/R1/Q[128]_dff_1<128>
+                                                       AES1/KGEN/INTE/Mmux_data_out01142
+    SLICE_X17Y38.B4      net (fanout=1)        0.344   AES1/KGEN/INTE/Mmux_data_out01142
+    SLICE_X17Y38.B       Tilo                  0.259   AES1/KGEN/STORE_k/R1/Q[128]_dff_1<128>
+                                                       AES1/KGEN/INTE/Mmux_data_out01143
+    SLICE_X16Y42.D2      net (fanout=2)        1.458   AES1/keywords0<87>
+    SLICE_X16Y42.CLK     Tas                   0.432   AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1<7>
+                                                       AES1/DUNIT0/DATAPATH/DC6/DATAPATH/MUX1/Mmux_Y84_F
+                                                       AES1/DUNIT0/DATAPATH/DC6/DATAPATH/MUX1/Mmux_Y84
+                                                       AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7
+    -------------------------------------------------  ---------------------------
+    Total                                      9.886ns (1.818ns logic, 8.068ns route)
+                                                       (18.4% logic, 81.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.158ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_14 (FF)
+  Destination:          AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.793ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.014ns (0.505 - 0.519)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_14 to AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X35Y35.CMUX    Tshcko                0.518   AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_15
+                                                       AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_14
+    SLICE_X36Y30.D4      net (fanout=20)       2.517   AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_14
+    SLICE_X36Y30.BMUX    Topdb                 0.430   AES1/KGEN/STORE_k/R12/Q[128]_dff_1<77>
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout0_6111
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout0_4_f7_110
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout0_2_f8_110
+    SLICE_X17Y38.C2      net (fanout=12)       3.576   AES1/KGEN/INTE/direct_dataout0<84>
+    SLICE_X17Y38.C       Tilo                  0.259   AES1/KGEN/STORE_k/R1/Q[128]_dff_1<128>
+                                                       AES1/KGEN/INTE/Mmux_data_out01142
+    SLICE_X17Y38.B4      net (fanout=1)        0.344   AES1/KGEN/INTE/Mmux_data_out01142
+    SLICE_X17Y38.B       Tilo                  0.259   AES1/KGEN/STORE_k/R1/Q[128]_dff_1<128>
+                                                       AES1/KGEN/INTE/Mmux_data_out01143
+    SLICE_X16Y42.D2      net (fanout=2)        1.458   AES1/keywords0<87>
+    SLICE_X16Y42.CLK     Tas                   0.432   AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1<7>
+                                                       AES1/DUNIT0/DATAPATH/DC6/DATAPATH/MUX1/Mmux_Y84_F
+                                                       AES1/DUNIT0/DATAPATH/DC6/DATAPATH/MUX1/Mmux_Y84
+                                                       AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7
+    -------------------------------------------------  ---------------------------
+    Total                                      9.793ns (1.898ns logic, 7.895ns route)
+                                                       (19.4% logic, 80.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.336ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES1/KGEN/INTE/regKEY/Q[255]_dff_1_84 (FF)
+  Destination:          AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.597ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.032ns (0.505 - 0.537)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: AES1/KGEN/INTE/regKEY/Q[255]_dff_1_84 to AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y26.CQ      Tcko                  0.430   AES1/KGEN/INTE/regKEY/Q[255]_dff_1<86>
+                                                       AES1/KGEN/INTE/regKEY/Q[255]_dff_1_84
+    SLICE_X36Y30.D5      net (fanout=6)        2.409   AES1/KGEN/INTE/regKEY/Q[255]_dff_1<84>
+    SLICE_X36Y30.BMUX    Topdb                 0.430   AES1/KGEN/STORE_k/R12/Q[128]_dff_1<77>
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout0_6111
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout0_4_f7_110
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout0_2_f8_110
+    SLICE_X17Y38.C2      net (fanout=12)       3.576   AES1/KGEN/INTE/direct_dataout0<84>
+    SLICE_X17Y38.C       Tilo                  0.259   AES1/KGEN/STORE_k/R1/Q[128]_dff_1<128>
+                                                       AES1/KGEN/INTE/Mmux_data_out01142
+    SLICE_X17Y38.B4      net (fanout=1)        0.344   AES1/KGEN/INTE/Mmux_data_out01142
+    SLICE_X17Y38.B       Tilo                  0.259   AES1/KGEN/STORE_k/R1/Q[128]_dff_1<128>
+                                                       AES1/KGEN/INTE/Mmux_data_out01143
+    SLICE_X16Y42.D2      net (fanout=2)        1.458   AES1/keywords0<87>
+    SLICE_X16Y42.CLK     Tas                   0.432   AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1<7>
+                                                       AES1/DUNIT0/DATAPATH/DC6/DATAPATH/MUX1/Mmux_Y84_F
+                                                       AES1/DUNIT0/DATAPATH/DC6/DATAPATH/MUX1/Mmux_Y84
+                                                       AES1/DUNIT0/DATAPATH/DC6/DATAPATH/STT1/Q[7]_dff_1_7
+    -------------------------------------------------  ---------------------------
+    Total                                      9.597ns (1.810ns logic, 7.787ns route)
+                                                       (18.9% logic, 81.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6 (SLICE_X40Y39.A1), 453 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.053ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_3 (FF)
+  Destination:          AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.867ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.045ns (0.481 - 0.526)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_3 to AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X38Y31.DQ      Tcko                  0.525   AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1<3>
+                                                       AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_3
+    SLICE_X22Y40.BX      net (fanout=134)      3.105   AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1<3>
+    SLICE_X22Y40.BMUX    Tbxb                  0.175   AES1/KGEN/INTE/direct_dataout1<124>
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout1_2_f8_26
+    SLICE_X31Y36.D2      net (fanout=12)       2.555   AES1/KGEN/INTE/direct_dataout1<124>
+    SLICE_X31Y36.D       Tilo                  0.259   AES1/KGEN/STORE_k/R4/Q[128]_dff_1<82>
+                                                       AES1/KGEN/INTE/Mmux_data_out1303
+    SLICE_X31Y36.A3      net (fanout=1)        0.351   AES1/KGEN/INTE/Mmux_data_out1302
+    SLICE_X31Y36.A       Tilo                  0.259   AES1/KGEN/STORE_k/R4/Q[128]_dff_1<82>
+                                                       AES1/KGEN/INTE/Mmux_data_out1305
+    SLICE_X40Y39.C1      net (fanout=2)        1.530   AES1/keywords1<126>
+    SLICE_X40Y39.C       Tilo                  0.235   AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1<6>
+                                                       AES1/DUNIT1/DATAPATH/DC3/DATAPATH/MUX1/Mmux_Y72
+    SLICE_X40Y39.A1      net (fanout=1)        0.524   AES1/DUNIT1/DATAPATH/DC3/DATAPATH/MUX1/Mmux_Y71
+    SLICE_X40Y39.CLK     Tas                   0.349   AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1<6>
+                                                       AES1/DUNIT1/DATAPATH/DC3/DATAPATH/MUX1/Mmux_Y74
+                                                       AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.867ns (1.802ns logic, 8.065ns route)
+                                                       (18.3% logic, 81.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.239ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2 (FF)
+  Destination:          AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.681ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.045ns (0.481 - 0.526)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2 to AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y31.DQ      Tcko                  0.476   AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1<2>
+                                                       AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2
+    SLICE_X32Y45.CX      net (fanout=265)      3.512   AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1<2>
+    SLICE_X32Y45.BMUX    Tcxb                  0.220   AES1/KGEN/INTE/direct_dataout1<110>
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout1_4_f7_11
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout1_2_f8_11
+    SLICE_X31Y36.D1      net (fanout=21)       1.966   AES1/KGEN/INTE/direct_dataout1<110>
+    SLICE_X31Y36.D       Tilo                  0.259   AES1/KGEN/STORE_k/R4/Q[128]_dff_1<82>
+                                                       AES1/KGEN/INTE/Mmux_data_out1303
+    SLICE_X31Y36.A3      net (fanout=1)        0.351   AES1/KGEN/INTE/Mmux_data_out1302
+    SLICE_X31Y36.A       Tilo                  0.259   AES1/KGEN/STORE_k/R4/Q[128]_dff_1<82>
+                                                       AES1/KGEN/INTE/Mmux_data_out1305
+    SLICE_X40Y39.C1      net (fanout=2)        1.530   AES1/keywords1<126>
+    SLICE_X40Y39.C       Tilo                  0.235   AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1<6>
+                                                       AES1/DUNIT1/DATAPATH/DC3/DATAPATH/MUX1/Mmux_Y72
+    SLICE_X40Y39.A1      net (fanout=1)        0.524   AES1/DUNIT1/DATAPATH/DC3/DATAPATH/MUX1/Mmux_Y71
+    SLICE_X40Y39.CLK     Tas                   0.349   AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1<6>
+                                                       AES1/DUNIT1/DATAPATH/DC3/DATAPATH/MUX1/Mmux_Y74
+                                                       AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.681ns (1.798ns logic, 7.883ns route)
+                                                       (18.6% logic, 81.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.430ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2 (FF)
+  Destination:          AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.490ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.045ns (0.481 - 0.526)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2 to AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y31.DQ      Tcko                  0.476   AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1<2>
+                                                       AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2
+    SLICE_X32Y45.AX      net (fanout=265)      3.327   AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1<2>
+    SLICE_X32Y45.BMUX    Taxb                  0.214   AES1/KGEN/INTE/direct_dataout1<110>
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout1_3_f7_11
+                                                       AES1/KGEN/INTE/Mmux_direct_dataout1_2_f8_11
+    SLICE_X31Y36.D1      net (fanout=21)       1.966   AES1/KGEN/INTE/direct_dataout1<110>
+    SLICE_X31Y36.D       Tilo                  0.259   AES1/KGEN/STORE_k/R4/Q[128]_dff_1<82>
+                                                       AES1/KGEN/INTE/Mmux_data_out1303
+    SLICE_X31Y36.A3      net (fanout=1)        0.351   AES1/KGEN/INTE/Mmux_data_out1302
+    SLICE_X31Y36.A       Tilo                  0.259   AES1/KGEN/STORE_k/R4/Q[128]_dff_1<82>
+                                                       AES1/KGEN/INTE/Mmux_data_out1305
+    SLICE_X40Y39.C1      net (fanout=2)        1.530   AES1/keywords1<126>
+    SLICE_X40Y39.C       Tilo                  0.235   AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1<6>
+                                                       AES1/DUNIT1/DATAPATH/DC3/DATAPATH/MUX1/Mmux_Y72
+    SLICE_X40Y39.A1      net (fanout=1)        0.524   AES1/DUNIT1/DATAPATH/DC3/DATAPATH/MUX1/Mmux_Y71
+    SLICE_X40Y39.CLK     Tas                   0.349   AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1<6>
+                                                       AES1/DUNIT1/DATAPATH/DC3/DATAPATH/MUX1/Mmux_Y74
+                                                       AES1/DUNIT1/DATAPATH/DC3/DATAPATH/STT1/Q[7]_dff_1_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.490ns (1.792ns logic, 7.698ns route)
+                                                       (18.9% logic, 81.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29 (SLICE_X3Y28.A3), 1134 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.054ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1 (FF)
+  Destination:          AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.897ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.014ns (0.253 - 0.267)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1 to AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y28.BQ       Tcko                  0.430   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5<3>
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1
+    SLICE_X7Y25.C2       net (fanout=10)       1.103   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1
+    SLICE_X7Y25.C        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_1_1
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INV1/Mxor_q<3>_xo<0>1
+    SLICE_X5Y26.B2       net (fanout=2)        2.111   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig8<3>
+    SLICE_X5Y26.B        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INVMAP1/Mxor_a<5>_xo<0>1_SW0
+    SLICE_X5Y26.D2       net (fanout=2)        0.529   N758
+    SLICE_X5Y26.D        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INVMAP1/Mxor_a<5>_xo<0>1
+    SLICE_X3Y26.C1       net (fanout=7)        0.972   AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>
+    SLICE_X3Y26.C        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/t4<29>
+                                                       AES1/KGEN/GEN/DATPATH1/Mxor_x1w0_29_xo<0>11
+    SLICE_X10Y26.A4      net (fanout=5)        0.989   AES1/KGEN/GEN/DATPATH1/N4
+    SLICE_X10Y26.A       Tilo                  0.254   N787
+                                                       AES1/KGEN/GEN/DATPATH1/MUX6/Mmux_Y221_SW0
+    SLICE_X9Y26.C4       net (fanout=1)        0.516   N787
+    SLICE_X9Y26.C        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/REGw4/Q[31]_dff_1<29>
+                                                       AES1/KGEN/GEN/DATPATH1/MUX7/Y<29>1
+    SLICE_X3Y28.A3       net (fanout=6)        1.325   AES1/KGEN/GEN/DATPATH1/t6<29>
+    SLICE_X3Y28.CLK      Tas                   0.373   AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1<31>
+                                                       AES1/KGEN/GEN/DATPATH1/MUXw3/Mmux_Y221
+                                                       AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29
+    -------------------------------------------------  ---------------------------
+    Total                                      9.897ns (2.352ns logic, 7.545ns route)
+                                                       (23.8% logic, 76.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.130ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1 (FF)
+  Destination:          AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.821ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.014ns (0.253 - 0.267)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1 to AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y28.BQ       Tcko                  0.430   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5<3>
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1
+    SLICE_X7Y25.C2       net (fanout=10)       1.103   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1
+    SLICE_X7Y25.C        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_1_1
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INV1/Mxor_q<3>_xo<0>1
+    SLICE_X5Y26.B2       net (fanout=2)        2.111   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig8<3>
+    SLICE_X5Y26.B        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INVMAP1/Mxor_a<5>_xo<0>1_SW0
+    SLICE_X5Y26.D2       net (fanout=2)        0.529   N758
+    SLICE_X5Y26.D        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INVMAP1/Mxor_a<5>_xo<0>1
+    SLICE_X3Y26.C1       net (fanout=7)        0.972   AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>
+    SLICE_X3Y26.C        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/t4<29>
+                                                       AES1/KGEN/GEN/DATPATH1/Mxor_x1w0_29_xo<0>11
+    SLICE_X4Y26.A4       net (fanout=5)        0.711   AES1/KGEN/GEN/DATPATH1/N4
+    SLICE_X4Y26.A        Tilo                  0.235   N418
+                                                       AES1/KGEN/GEN/DATPATH1/MUX6/Mmux_Y221_SW1
+    SLICE_X9Y26.C5       net (fanout=1)        0.737   N788
+    SLICE_X9Y26.C        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/REGw4/Q[31]_dff_1<29>
+                                                       AES1/KGEN/GEN/DATPATH1/MUX7/Y<29>1
+    SLICE_X3Y28.A3       net (fanout=6)        1.325   AES1/KGEN/GEN/DATPATH1/t6<29>
+    SLICE_X3Y28.CLK      Tas                   0.373   AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1<31>
+                                                       AES1/KGEN/GEN/DATPATH1/MUXw3/Mmux_Y221
+                                                       AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29
+    -------------------------------------------------  ---------------------------
+    Total                                      9.821ns (2.333ns logic, 7.488ns route)
+                                                       (23.8% logic, 76.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.131ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1 (FF)
+  Destination:          AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.820ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.014ns (0.253 - 0.267)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1 to AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y28.BQ       Tcko                  0.430   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5<3>
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1
+    SLICE_X7Y25.C2       net (fanout=10)       1.103   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1
+    SLICE_X7Y25.C        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_1_1
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INV1/Mxor_q<3>_xo<0>1
+    SLICE_X5Y26.B2       net (fanout=2)        2.111   AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig8<3>
+    SLICE_X5Y26.B        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INVMAP1/Mxor_a<5>_xo<0>1_SW0
+    SLICE_X5Y26.D2       net (fanout=2)        0.529   N758
+    SLICE_X5Y26.D        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>
+                                                       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INVMAP1/Mxor_a<5>_xo<0>1
+    SLICE_X3Y26.C1       net (fanout=7)        0.972   AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>
+    SLICE_X3Y26.C        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/t4<29>
+                                                       AES1/KGEN/GEN/DATPATH1/Mxor_x1w0_29_xo<0>11
+    SLICE_X3Y26.D5       net (fanout=5)        0.241   AES1/KGEN/GEN/DATPATH1/N4
+    SLICE_X3Y26.D        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/t4<29>
+                                                       AES1/KGEN/GEN/DATPATH1/MUX5/Y<29>1
+    SLICE_X9Y26.C2       net (fanout=5)        1.182   AES1/KGEN/GEN/DATPATH1/t4<29>
+    SLICE_X9Y26.C        Tilo                  0.259   AES1/KGEN/GEN/DATPATH1/REGw4/Q[31]_dff_1<29>
+                                                       AES1/KGEN/GEN/DATPATH1/MUX7/Y<29>1
+    SLICE_X3Y28.A3       net (fanout=6)        1.325   AES1/KGEN/GEN/DATPATH1/t6<29>
+    SLICE_X3Y28.CLK      Tas                   0.373   AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1<31>
+                                                       AES1/KGEN/GEN/DATPATH1/MUXw3/Mmux_Y221
+                                                       AES1/KGEN/GEN/DATPATH1/REGw3/Q[31]_dff_1_29
+    -------------------------------------------------  ---------------------------
+    Total                                      9.820ns (2.357ns logic, 7.463ns route)
+                                                       (24.0% logic, 76.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_CLK = PERIOD TIMEGRP "CLK" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point TRANSM/SER/TXDEV/Rcnt[9]_dff_16_8 (SLICE_X44Y53.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.282ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TRANSM/SER/TXDEV/nextstate[1]_dff_0_FSM_FFd1 (FF)
+  Destination:          TRANSM/SER/TXDEV/Rcnt[9]_dff_16_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.285ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.070 - 0.067)
+  Source Clock:         CLK_BUFGP rising at 10.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TRANSM/SER/TXDEV/nextstate[1]_dff_0_FSM_FFd1 to TRANSM/SER/TXDEV/Rcnt[9]_dff_16_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y53.AQ      Tcko                  0.198   TRANSM/SER/TXDEV/nextstate[1]_dff_0_FSM_FFd1
+                                                       TRANSM/SER/TXDEV/nextstate[1]_dff_0_FSM_FFd1
+    SLICE_X44Y53.CE      net (fanout=30)       0.191   TRANSM/SER/TXDEV/nextstate[1]_dff_0_FSM_FFd1
+    SLICE_X44Y53.CLK     Tckce       (-Th)     0.104   TRANSM/SER/TXDEV/Rcnt[9]_dff_16<8>
+                                                       TRANSM/SER/TXDEV/Rcnt[9]_dff_16_8
+    -------------------------------------------------  ---------------------------
+    Total                                      0.285ns (0.094ns logic, 0.191ns route)
+                                                       (33.0% logic, 67.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TRANSM/RX/DATAPATH/KEY6/Q[7]_dff_1_4 (SLICE_X25Y23.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.408ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TRANSM/RX/DATAPATH/KEY5/Q[7]_dff_1_4 (FF)
+  Destination:          TRANSM/RX/DATAPATH/KEY6/Q[7]_dff_1_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.410ns (Levels of Logic = 0)
+  Clock Path Skew:      0.002ns (0.031 - 0.029)
+  Source Clock:         CLK_BUFGP rising at 10.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TRANSM/RX/DATAPATH/KEY5/Q[7]_dff_1_4 to TRANSM/RX/DATAPATH/KEY6/Q[7]_dff_1_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y23.CQ      Tcko                  0.200   TRANSM/RX/DATAPATH/KEY5/Q[7]_dff_1<6>
+                                                       TRANSM/RX/DATAPATH/KEY5/Q[7]_dff_1_4
+    SLICE_X25Y23.CX      net (fanout=2)        0.151   TRANSM/RX/DATAPATH/KEY5/Q[7]_dff_1<4>
+    SLICE_X25Y23.CLK     Tckdi       (-Th)    -0.059   TRANSM/RX/DATAPATH/KEY6/Q[7]_dff_1<6>
+                                                       TRANSM/RX/DATAPATH/KEY6/Q[7]_dff_1_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.410ns (0.259ns logic, 0.151ns route)
+                                                       (63.2% logic, 36.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TRANSM/SER/TXDEV/Rcnt[9]_dff_16_9 (SLICE_X42Y53.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.408ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TRANSM/SER/TXDEV/Rcnt[9]_dff_16_9 (FF)
+  Destination:          TRANSM/SER/TXDEV/Rcnt[9]_dff_16_9 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.408ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 10.000ns
+  Destination Clock:    CLK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TRANSM/SER/TXDEV/Rcnt[9]_dff_16_9 to TRANSM/SER/TXDEV/Rcnt[9]_dff_16_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y53.CQ      Tcko                  0.200   TRANSM/SER/TXDEV/Rcnt[9]_dff_16<9>
+                                                       TRANSM/SER/TXDEV/Rcnt[9]_dff_16_9
+    SLICE_X42Y53.CX      net (fanout=3)        0.102   TRANSM/SER/TXDEV/Rcnt[9]_dff_16<9>
+    SLICE_X42Y53.CLK     Tckdi       (-Th)    -0.106   TRANSM/SER/TXDEV/Rcnt[9]_dff_16<9>
+                                                       TRANSM/SER/TXDEV/Mmux_n003910_f7
+                                                       TRANSM/SER/TXDEV/Rcnt[9]_dff_16_9
+    -------------------------------------------------  ---------------------------
+    Total                                      0.408ns (0.306ns logic, 0.102ns route)
+                                                       (75.0% logic, 25.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CLK = PERIOD TIMEGRP "CLK" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.730ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.270ns (440.529MHz) (Tbcper_I)
+  Physical resource: CLK_BUFGP/BUFG/I0
+  Logical resource: CLK_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X2Y4.I0
+  Clock network: CLK_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 8.601ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd101/CLK
+  Logical resource: AES1/DUNIT1/CONTROLUNIT/Mshreg_nextstate[4]_dff_0_FSM_FFd10/CLK
+  Location pin: SLICE_X22Y45.CLK
+  Clock network: CLK_BUFGP
+--------------------------------------------------------------------------------
+Slack: 8.601ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd101/CLK
+  Logical resource: AES1/DUNIT0/CONTROLUNIT/Mshreg_nextstate[4]_dff_0_FSM_FFd10/CLK
+  Location pin: SLICE_X22Y45.CLK
+  Clock network: CLK_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
 
 
 Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock CLK
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-BTNU        |    6.581(R)|      SLOW  |   -2.189(R)|      FAST  |CLK_BUFGP         |   0.000|
-RXD         |    5.507(R)|      SLOW  |   -3.126(R)|      FAST  |CLK_BUFGP         |   0.000|
-rst_n       |   14.336(R)|      SLOW  |   -4.501(R)|      FAST  |CLK_BUFGP         |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
-
-Clock CLK to Pad
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
-Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-TXD         |        12.945(R)|      SLOW  |         6.728(R)|      FAST  |CLK_BUFGP         |   0.000|
-test_out<0> |        10.194(R)|      SLOW  |         5.059(R)|      FAST  |CLK_BUFGP         |   0.000|
-test_out<1> |        10.256(R)|      SLOW  |         5.083(R)|      FAST  |CLK_BUFGP         |   0.000|
-test_out<2> |        10.181(R)|      SLOW  |         5.040(R)|      FAST  |CLK_BUFGP         |   0.000|
-test_out<3> |        10.762(R)|      SLOW  |         5.368(R)|      FAST  |CLK_BUFGP         |   0.000|
-test_out<4> |        10.694(R)|      SLOW  |         5.342(R)|      FAST  |CLK_BUFGP         |   0.000|
-test_out<5> |        14.264(R)|      SLOW  |         7.409(R)|      FAST  |CLK_BUFGP         |   0.000|
-test_out<6> |        12.104(R)|      SLOW  |         6.108(R)|      FAST  |CLK_BUFGP         |   0.000|
-test_out<7> |        11.770(R)|      SLOW  |         5.888(R)|      FAST  |CLK_BUFGP         |   0.000|
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-
 Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.840|         |         |         |
+CLK            |    9.953|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Sep 28 17:27:28 2018 
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 433645 paths, 0 nets, and 43018 connections
+
+Design statistics:
+   Minimum period:   9.953ns{1}   (Maximum frequency: 100.472MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Oct 15 14:04:33 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 255 MB
+Peak Memory Usage: 279 MB
 
 
 

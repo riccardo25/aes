@@ -10,28 +10,28 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity storage is
+	entity storage is
 
-port(
-	CLK, rst_n : in std_logic;
-	
-	--INPUT FROM INTERFACE
-	key 												: in std_logic_vector (255 downto 0);
-	key_len 											: in std_logic_vector (1 downto 0);
-	
-	--INPUT FROM GENERATOR
-	validin 											: in std_logic;
-	datain											: in std_logic_vector (127 downto 0);
-	curr_round										: in std_logic_vector (3 downto 0);
-	
-	--OUTPUT TO INTERFACE
- 	R0out, R1out, R2out, R3out, R4out, 
-	R5out, R6out, R7out, R8out, R9out, 
-	R10out, R11out, R12out, R13out, R14out	: out std_logic_vector(128 downto 0)
-	
-	
-);
-end storage;
+		port(
+			CLK, rst_n : in std_logic;
+			
+			--INPUT FROM INTERFACE
+			key 												: in std_logic_vector (255 downto 0);
+			key_len 											: in std_logic_vector (1 downto 0);
+			
+			--INPUT FROM GENERATOR
+			validin 											: in std_logic;
+			datain											: in std_logic_vector (127 downto 0);
+			curr_round										: in std_logic_vector (3 downto 0);
+			
+			--OUTPUT TO INTERFACE
+			R0out, R1out, R2out, R3out, R4out, 
+			R5out, R6out, R7out, R8out, R9out, 
+			R10out, R11out, R12out, R13out, R14out	: out std_logic_vector(128 downto 0)
+			
+			
+		);
+	end storage;
 
 architecture arc of storage is
 
@@ -47,7 +47,7 @@ architecture arc of storage is
 				load_R5,  load_R6,  load_R7,  load_R8,  load_R9,  
 				load_R10, load_R11, load_R12, load_R13, load_R14			: std_logic;
 				
-	signal 	Rin, R0in																: std_logic_vector (128 downto 0);
+	signal 	Rin																		: std_logic_vector (128 downto 0);
 	signal 	sync_curr_round 														: std_logic_vector (3 downto 0);
 	signal	sync_validin															: std_logic;
 	signal 	sync_datain																: std_logic_vector (127 downto 0);
@@ -83,7 +83,6 @@ begin
 
 -- REGISTERS
 
-	R0in	<= '1' & key(127 downto 0);
 	Rin   <= sync_validin & sync_datain;
 	
 	--R0 don't need register -> it's always the key

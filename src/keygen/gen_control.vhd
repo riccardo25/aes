@@ -7,10 +7,7 @@ entity gen_control is
 		CLK, rst_n : in std_logic;
 	
 -- INPUT
-		key 										: in std_logic_vector (255 downto 0);
-		key_len 									: in std_logic_vector (1 downto 0); 
-		ROUND 									: in std_logic_vector (3 downto 0);
-		w0, w1, w2, w3, w4, w5, w6, w7 	: in std_logic_vector (31 downto 0);
+		key_len 									: in std_logic_vector (1 downto 0);
 		curr_round 								: in std_logic_vector (3 downto 0);
 		
 -- OUTPUT
@@ -46,7 +43,7 @@ begin
 
 	state <= 	USELESS when rst_n = '0' else nextstate when rising_edge(CLK);
 
-	process (state, key, key_len, ROUND, w0, w1, w2, w3, w4, w5, w6, w7, curr_round)
+	process (state, key_len, curr_round)
 		begin
 		
 		case state is

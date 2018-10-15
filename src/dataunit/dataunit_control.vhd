@@ -14,7 +14,6 @@ port (
 		key_lenght							: in std_logic_vector (1 downto 0);
 		enc									: in std_logic;
 		key_valid							: in std_logic;
-		ready_for_input					: in std_logic;
 		-- data outputs
 		loading								: out std_logic;
 		sel_state, sel_round				: out std_logic_vector (2 downto 0);
@@ -44,7 +43,7 @@ begin
 	--FSM
 	state <= 	INIT 	when rst_n = '0' else nextstate when rising_edge(CLK);
 	
-	process (state, ROUND, key_lenght, key_valid, enc, ready_for_input)
+	process (state, ROUND, key_lenght, key_valid, enc)
 	begin
 	
 		case state is
@@ -53,9 +52,7 @@ begin
 				nextstate <=USELESS0;
 			when USELESS0 =>
 				
-				if(ready_for_input = '1') then 
-					nextstate <= USELESS0;
-				elsif( enc = '1' ) then 
+				if( enc = '1' ) then 
 					nextstate <= PRELOADenc;
 				elsif( key_lenght = "00") then
 					nextstate <= PREPARE0;

@@ -5,220 +5,227 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Repository\XILINX\aes\src\keygen\storage.vhd" Line 86: Assignment to <arg fmt="%s" index="1">r0in</arg> ignored, since the identifier is never used
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/aescore/aescore.vhd</arg>&quot; line <arg fmt="%d" index="2">146</arg>: Output port &lt;<arg fmt="%s" index="3">datasend</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">TRANSM</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">key_len&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/cipher/cipher.vhd</arg>&quot; line <arg fmt="%d" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">curr_key</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DL1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ROUND&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/keygen/generator.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">w0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATPATH1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/keygen/generator.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">w1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATPATH1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">key&lt;255:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/keygen/generator.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">w2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATPATH1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ROUND&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/keygen/generator.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">w3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATPATH1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">w0&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/keygen/generator.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">w4</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATPATH1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">w1&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/keygen/generator.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">w5</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATPATH1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">w2&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/keygen/generator.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">w6</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATPATH1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">w3&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/keygen/generator.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">w7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATPATH1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">w4&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">w5&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait13</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">w6&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait14</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">w7&lt;31:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait15</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait13</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait16</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait14</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait17</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait15</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait18</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait16</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait19</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait17</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait20</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait18</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait21</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait19</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait22</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait20</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">key&lt;255:128&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait21</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">load3dec</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[4]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait22</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">mixadddec</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[4]_dff_0</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">key&lt;255:128&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">load3dec</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[4]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">158</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">mixadddec</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[4]_dff_0</arg>&gt;.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">171</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">183</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">158</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">171</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">214</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">183</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">238</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">214</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">250</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC5</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">263</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">238</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC6</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">275</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC9</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">250</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">287</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC10</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">263</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC11</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">275</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC9</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">312</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC12</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">287</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC10</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">324</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC13</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">299</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC11</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">336</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC14</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">312</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC12</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">348</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC15</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">324</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC13</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">key_lenght&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">336</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC14</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ROUND&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd</arg>&quot; line <arg fmt="%d" index="2">348</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sttin</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DC15</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">d:/repository/xilinx/aes/src/aescore/cap_tx.vhd</arg>&quot; line <arg fmt="%d" index="2">110</arg>: Output port &lt;<arg fmt="%s" index="3">ENC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATAPATH</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">key_lenght&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ROUND&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">enc</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">KEYIN</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">DL1</arg>&gt;.
+It will be removed from the design.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">terminate</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[4]_dff_0</arg>&gt;.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Rdata[9]_dff_14_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RXDEV</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="3031" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_output</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Rdata[9]_dff_14_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RXDEV</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Rdata[9]_dff_14_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rx</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="3031" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_output</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="warning" file="Xst" num="2973" delta="new" >All outputs of instance &lt;<arg fmt="%s" index="1">AES1/DL1/KEYIN</arg>&gt; of block &lt;<arg fmt="%s" index="2">reg_6</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Rdata[9]_dff_14_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rx</arg>&gt;.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Rdata[10]_dff_10_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Rdata[10]_dff_10_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Rdata[10]_dff_10_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Rdata[10]_dff_10_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX4/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX4/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX3/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX3/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX2/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX2/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX1/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX1/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX4/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX4/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX3/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX3/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX2/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX2/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX1/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX1/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">TRANSM/TX/DATAPATH/ENC_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">aescore</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT/DATAPATH/SBOX0/enc_sync</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT/DATAPATH/SBOX1/enc_sync&gt; &lt;AES1/DUNIT/DATAPATH/SBOX2/enc_sync&gt; &lt;AES1/DUNIT/DATAPATH/SBOX3/enc_sync&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT1/DATAPATH/SBOX0/enc_sync</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT1/DATAPATH/SBOX1/enc_sync&gt; &lt;AES1/DUNIT1/DATAPATH/SBOX2/enc_sync&gt; &lt;AES1/DUNIT1/DATAPATH/SBOX3/enc_sync&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT/DATAPATH/SBOX0/enc1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT/DATAPATH/SBOX1/enc1&gt; &lt;AES1/DUNIT/DATAPATH/SBOX2/enc1&gt; &lt;AES1/DUNIT/DATAPATH/SBOX3/enc1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT0/DATAPATH/SBOX0/enc_sync</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT0/DATAPATH/SBOX1/enc_sync&gt; &lt;AES1/DUNIT0/DATAPATH/SBOX2/enc_sync&gt; &lt;AES1/DUNIT0/DATAPATH/SBOX3/enc_sync&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT0/DATAPATH/SBOX0/enc1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT0/DATAPATH/SBOX1/enc1&gt; &lt;AES1/DUNIT0/DATAPATH/SBOX2/enc1&gt; &lt;AES1/DUNIT0/DATAPATH/SBOX3/enc1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT1/DATAPATH/SBOX0/enc1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT1/DATAPATH/SBOX1/enc1&gt; &lt;AES1/DUNIT1/DATAPATH/SBOX2/enc1&gt; &lt;AES1/DUNIT1/DATAPATH/SBOX3/enc1&gt; </arg>
 </msg>
 
 </messages>

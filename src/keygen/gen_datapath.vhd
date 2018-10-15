@@ -11,8 +11,6 @@ port(
 	
 	-- INPUT
 	key 												: in std_logic_vector (255 downto 0);
-	key_len 											: in std_logic_vector (1 downto 0); 
-	ROUND 											: in std_logic_vector (3 downto 0);
 	
 	--from controller
 	sel_curr, sel_s, sel_t5, sel_t7, 
