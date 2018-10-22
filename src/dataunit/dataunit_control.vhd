@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity dataunit_control is
 
-port (
+	port (
 		CLK, rst_n 							: in std_logic;
 
 		-- data inputs
