@@ -46,13 +46,13 @@
          <ClosedNode>/syncronizer - arc</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>DL0 - cbc - arc (D:/Repository/XILINX/aes/src/cipher/cbc.vhd)</SelectedItem>
+         <SelectedItem>D:\Repository\XILINX\aeswithusb\pins.ucf (D:/Repository/XILINX/aeswithusb/pins.ucf)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001f5000000020000000000000000000000000000000064ffffffff000000810000000000000002000001f50000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>DL0 - cbc - arc (D:/Repository/XILINX/aes/src/cipher/cbc.vhd)</CurrentItem>
+      <CurrentItem>D:\Repository\XILINX\aeswithusb\pins.ucf (D:/Repository/XILINX/aeswithusb/pins.ucf)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -143,7 +143,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000187000000010000000100000000000000000000000064ffffffff000000810000000000000001000001870000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>User Constraints</CurrentItem>
    </ItemView>

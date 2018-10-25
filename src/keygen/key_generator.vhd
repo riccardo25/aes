@@ -1,35 +1,26 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+entity key_generator is
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
-	entity key_generator is
-
-		port(
-			CLK, rst_n 		: in std_logic;
-			
-			-- INPUT
-			key 				: in std_logic_vector (255 downto 0);
-			key_len 			: in std_logic_vector (1 downto 0); 
-			ROUND0 			: in std_logic_vector (3 downto 0);
-			ROUND1			: in std_logic_vector (3 downto 0);
-			enc0				: in std_logic;
-			enc1				: in std_logic;
-			
-			-- OUTPUT
-			valid_out0 		: out std_logic;
-			data_out0		: out std_logic_vector (127 downto 0);
-			valid_out1 		: out std_logic;
-			data_out1		: out std_logic_vector (127 downto 0)
-		);
-	end key_generator;
+	port(
+		CLK, rst_n 		: in std_logic;
+		
+		-- INPUT
+		key 				: in std_logic_vector (255 downto 0);
+		key_len 			: in std_logic_vector (1 downto 0); 
+		ROUND0 			: in std_logic_vector (3 downto 0);
+		ROUND1			: in std_logic_vector (3 downto 0);
+		enc0				: in std_logic;
+		enc1				: in std_logic;
+		
+		-- OUTPUT
+		valid_out0 		: out std_logic;
+		data_out0		: out std_logic_vector (127 downto 0);
+		valid_out1 		: out std_logic;
+		data_out1		: out std_logic_vector (127 downto 0)
+	);
+end key_generator;
 
 architecture arc of key_generator is
 

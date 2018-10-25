@@ -8,12 +8,12 @@ entity dataunit_control is
 		CLK, rst_n 							: in std_logic;
 
 		-- data inputs
-
 		--STT									: in std_logic_vector (7 downto 0);
 		ROUND									: in std_logic_vector (3 downto 0);
 		key_lenght							: in std_logic_vector (1 downto 0);
 		enc									: in std_logic;
 		key_valid							: in std_logic;
+		
 		-- data outputs
 		loading								: out std_logic;
 		sel_state, sel_round				: out std_logic_vector (2 downto 0);

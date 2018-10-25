@@ -3,69 +3,64 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 -- interface
-entity inv8 is
-port (
-	-- data inputs
-	CLK : in std_logic;
-	
-	a 			: in std_logic_vector(7 downto 0);
+	entity inv8 is
+		port (
+			-- data inputs
+			CLK : in std_logic;
+			a 			: in std_logic_vector(7 downto 0);
 
-	-- data outputs
-	
-	q 			: out std_logic_vector(7 downto 0)
-
-	-- control signals
-	
-	-- status signals
-);
-end inv8;
+			-- data outputs
+			q 			: out std_logic_vector(7 downto 0)
+			
+		);
+	end inv8;
 
 architecture struct of inv8 is
 
-component mapp is
-port (
-	data_in 			: in std_logic_vector(7 downto 0);
-	a_h 				: out std_logic_vector(3 downto 0);
-	a_l	 			: out std_logic_vector(3 downto 0)
-);
-end component;
+	component mapp is
+	port (
+		data_in 			: in std_logic_vector(7 downto 0);
+		a_h 				: out std_logic_vector(3 downto 0);
+		a_l	 			: out std_logic_vector(3 downto 0)
+	);
+	end component;
 
-component square4 is
-port (
-	data_in 			: in std_logic_vector(3 downto 0);
-	data_out 		: out std_logic_vector(3 downto 0)
-);
-end component;
+	component square4 is
+	port (
+		data_in 			: in std_logic_vector(3 downto 0);
+		data_out 		: out std_logic_vector(3 downto 0)
+	);
+	end component;
 
-component mul4 is
-port (
-	a 			: in std_logic_vector(3 downto 0);
-	b 			: in std_logic_vector(3 downto 0);
-	q 			: out std_logic_vector(3 downto 0)
-);
-end component;
+	component mul4 is
+	port (
+		a 			: in std_logic_vector(3 downto 0);
+		b 			: in std_logic_vector(3 downto 0);
+		q 			: out std_logic_vector(3 downto 0)
+	);
+	end component;
 
-component mule is
-port (
-	a 			: in std_logic_vector(3 downto 0);
-	q 			: out std_logic_vector(3 downto 0)
-);
-end component;
+	component mule is
+	port (
+		a 			: in std_logic_vector(3 downto 0);
+		q 			: out std_logic_vector(3 downto 0)
+	);
+	end component;
 
-component inv4 is
-port (
-	a 			: in std_logic_vector(3 downto 0);
-	q 			: out std_logic_vector(3 downto 0)
-);
-end component;
+	component inv4 is
+	port (
+		a 			: in std_logic_vector(3 downto 0);
+		q 			: out std_logic_vector(3 downto 0)
+	);
+	end component;
 
-component inv_map is
-port (
-	a_h 				: in std_logic_vector(3 downto 0);
-	a_l	 			: in std_logic_vector(3 downto 0);
-	a		 			: out std_logic_vector(7 downto 0)
-);
-end component;
+	component inv_map is
+	port (
+		a_h 				: in std_logic_vector(3 downto 0);
+		a_l	 			: in std_logic_vector(3 downto 0);
+		a		 			: out std_logic_vector(7 downto 0)
+	);
+	end component;
 
 
 	

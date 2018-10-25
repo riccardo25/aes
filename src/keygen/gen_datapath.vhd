@@ -129,7 +129,6 @@ begin
 	CUREC : reg 			generic map(4)	 port map(CLK => CLK, rst_n => rst_n, load => load_rcon, D => rconsel_out, Q => rcon_round);
 
 -- X1 BLOCK
-
 	MUX2 : mux4input 		generic map(32) port map(sel => sel_rotWord, I0 => w3_out, I1 => t5, I2 =>w7_out, I3 => w5_out, Y=>p);
 	ROT1 : rotword 							 port map( input => p, output => r);
 	MUX3 : mux2input 		generic map(32) port map(sel=> sel_s, I0 => w7_out, I1 => r, Y=> s );

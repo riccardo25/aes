@@ -4,23 +4,17 @@ use ieee.numeric_std.all;
 
 -- interface
 entity sbox is
-port (
+	port (
 
-	CLK, rst_n 		: in std_logic;
-	-- data inputs
-	
-	data_in 			: in std_logic_vector(7 downto 0);
+		CLK, rst_n 		: in std_logic;
+		-- data inputs
+		data_in 			: in std_logic_vector(7 downto 0);
 
-	-- data outputs
-	
-	data_out 		: out std_logic_vector(7 downto 0);
-
-	-- control signals
-
-	enc				: in std_logic
-	
-	-- status signals
-);
+		-- data outputs
+		data_out 		: out std_logic_vector(7 downto 0);
+		-- control signals
+		enc				: in std_logic
+	);
 end sbox;
 
 architecture struct of sbox is

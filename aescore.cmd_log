@@ -218,3 +218,9 @@ map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplicat
 par -w -intstyle ise -ol high aescore_map.ncd aescore.ncd aescore.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml aescore.twx aescore.ncd -o aescore.twr aescore.pcf 
 bitgen -intstyle ise -f aescore.ut aescore.ncd 
+xst -intstyle ise -ifn "D:/Repository/XILINX/aes/aescore.xst" -ofn "D:/Repository/XILINX/aes/aescore.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Repository/XILINX/aeswithusb/pins.ucf -p xc6slx45-csg324-3 aescore.ngc aescore.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o aescore_map.ncd aescore.ngd aescore.pcf 
+par -w -intstyle ise -ol high aescore_map.ncd aescore.ncd aescore.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml aescore.twx aescore.ncd -o aescore.twr aescore.pcf 
+bitgen -intstyle ise -f aescore.ut aescore.ncd 

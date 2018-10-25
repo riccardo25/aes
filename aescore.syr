@@ -3,14 +3,14 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Reading design: aescore.prj
 
@@ -756,22 +756,22 @@ Unit <dataunit_control> synthesized.
 Synthesizing Unit <dataunit_datapath>.
     Related source file is "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd".
 WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 158: Output port <debug_sttin> of the instance <DC0> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 171: Output port <debug_sttin> of the instance <DC1> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 183: Output port <debug_sttin> of the instance <DC2> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 195: Output port <debug_sttin> of the instance <DC3> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 214: Output port <debug_sttin> of the instance <DC4> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 226: Output port <debug_sttin> of the instance <DC5> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 238: Output port <debug_sttin> of the instance <DC6> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 250: Output port <debug_sttin> of the instance <DC7> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 263: Output port <debug_sttin> of the instance <DC8> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 275: Output port <debug_sttin> of the instance <DC9> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 287: Output port <debug_sttin> of the instance <DC10> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 299: Output port <debug_sttin> of the instance <DC11> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 312: Output port <debug_sttin> of the instance <DC12> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 324: Output port <debug_sttin> of the instance <DC13> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 336: Output port <debug_sttin> of the instance <DC14> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 348: Output port <debug_sttin> of the instance <DC15> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 149: Output port <debug_sttin> of the instance <DC0> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 162: Output port <debug_sttin> of the instance <DC1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 174: Output port <debug_sttin> of the instance <DC2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 186: Output port <debug_sttin> of the instance <DC3> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 205: Output port <debug_sttin> of the instance <DC4> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 217: Output port <debug_sttin> of the instance <DC5> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 229: Output port <debug_sttin> of the instance <DC6> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 241: Output port <debug_sttin> of the instance <DC7> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 254: Output port <debug_sttin> of the instance <DC8> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 266: Output port <debug_sttin> of the instance <DC9> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 278: Output port <debug_sttin> of the instance <DC10> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 290: Output port <debug_sttin> of the instance <DC11> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 303: Output port <debug_sttin> of the instance <DC12> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 315: Output port <debug_sttin> of the instance <DC13> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 327: Output port <debug_sttin> of the instance <DC14> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "d:/repository/xilinx/aes/src/dataunit/dataunit_datapath.vhd" line 339: Output port <debug_sttin> of the instance <DC15> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <dataunit_datapath> synthesized.
@@ -1659,12 +1659,12 @@ Offset:              6.546ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 96.00 secs
-Total CPU time to Xst completion: 96.12 secs
+Total REAL time to Xst completion: 86.00 secs
+Total CPU time to Xst completion: 85.67 secs
  
 --> 
 
-Total memory usage is 360616 kilobytes
+Total memory usage is 360168 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   30 (   0 filtered)

@@ -3,30 +3,27 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
-	entity dataunit is
-
-		port (
-				--INPUT
-				CLK, rst_n 							: in std_logic;
-				keywords								: in std_logic_vector (127 downto 0);
-				in0, in1, in2, in3				: in std_logic_vector (7 downto 0);
-				key_lenght							: in std_logic_vector (1 downto 0);
-				enc									: in std_logic;	
-				key_valid							: in std_logic;
-				
-				--OUTPUT
-				loading								: out std_logic;
-				ROUND									: out std_logic_vector (3 downto 0);
-				data_out0, data_out1,
-				data_out2, data_out3				: out std_logic_vector (7 downto 0);
-				valid_out							: out std_logic
-				
-			);
-	end dataunit;
+entity dataunit is
+	port (
+			--INPUT
+			CLK, rst_n 							: in std_logic;
+			keywords								: in std_logic_vector (127 downto 0);
+			in0, in1, in2, in3				: in std_logic_vector (7 downto 0);
+			key_lenght							: in std_logic_vector (1 downto 0);
+			enc									: in std_logic;	
+			key_valid							: in std_logic;
+			
+			--OUTPUT
+			loading								: out std_logic;
+			ROUND									: out std_logic_vector (3 downto 0);
+			data_out0, data_out1,
+			data_out2, data_out3				: out std_logic_vector (7 downto 0);
+			valid_out							: out std_logic
+			
+		);
+end dataunit;
 
 architecture arc of dataunit is
-
-
 
 	component dataunit_control is
 

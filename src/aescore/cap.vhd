@@ -2,7 +2,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity cap is
-
 	port(
 	--INPUTS
 		CLK, rst_n						: in std_logic;
