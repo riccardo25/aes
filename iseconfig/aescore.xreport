@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-10-25T14:41:42</DateModified>
+  <DateModified>2018-10-26T13:18:59</DateModified>
   <ModuleName>aescore</ModuleName>
-  <SummaryTimeStamp>2018-10-21T22:41:49</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-10-26T12:50:20</SummaryTimeStamp>
   <SavedFilePath>D:/Repository/XILINX/aes/iseconfig/aescore.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/Repository/XILINX/aes\</ImplementationReportsDirectory>
   <DateInitialized>2018-09-28T15:44:28</DateInitialized>

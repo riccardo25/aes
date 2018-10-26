@@ -4,13 +4,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.32 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> Reading design: aescore.prj
 
@@ -1498,9 +1498,9 @@ Primitive and Black Box Usage:
 #      INV                         : 34
 #      LUT2                        : 167
 #      LUT3                        : 199
-#      LUT4                        : 342
+#      LUT4                        : 343
 #      LUT5                        : 1705
-#      LUT6                        : 4062
+#      LUT6                        : 4061
 #      MUXCY                       : 86
 #      MUXF7                       : 1049
 #      MUXF8                       : 258
@@ -1590,7 +1590,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 8.546ns (frequency: 117.013MHz)
-  Total number of paths / destination ports: 433648 / 12238
+  Total number of paths / destination ports: 433647 / 12238
 -------------------------------------------------------------------------
 Delay:               8.546ns (Levels of Logic = 7)
   Source:            AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2 (FF)
@@ -1659,12 +1659,12 @@ Offset:              6.546ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 86.00 secs
-Total CPU time to Xst completion: 85.67 secs
+Total REAL time to Xst completion: 83.00 secs
+Total CPU time to Xst completion: 82.51 secs
  
 --> 
 
-Total memory usage is 360168 kilobytes
+Total memory usage is 360104 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   30 (   0 filtered)

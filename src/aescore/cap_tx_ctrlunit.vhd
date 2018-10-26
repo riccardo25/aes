@@ -67,7 +67,7 @@ begin
 				
 			when LOADDATA =>
 			
-				if(ENC = '0' ) then 
+				if(ENC = '1' ) then 
 					nextstate <= WRITEDATA0;
 				else
 					nextstate <= WRITEDATA1;
