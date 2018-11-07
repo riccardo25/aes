@@ -63,7 +63,7 @@ begin
 			when WAIT22 =>
 				nextstate <= WORK0;
 			when WORK0 =>
-				nextstate <= WAIT0;
+				nextstate <= WAIT1;
 			when WAIT0 =>
 				nextstate <= WAIT1;
 			when WAIT1 =>
@@ -83,7 +83,7 @@ begin
 			when WAIT17 =>
 				nextstate <= WORK1;
 			when WORK1 =>
-				nextstate <= WAIT3;
+				nextstate <= WAIT4;
 			when WAIT3 =>
 				nextstate <= WAIT4;
 			when WAIT4 =>
@@ -97,7 +97,7 @@ begin
 			when FINAL2 =>
 				nextstate <= WORK2;
 			when WORK2 =>
-				nextstate <= WAIT5;
+				nextstate <= WAIT6;
 			when WAIT5 =>
 				nextstate <= WAIT6;
 			when WAIT6 =>
@@ -109,7 +109,7 @@ begin
 					nextstate <= WORK3;
 				end if;
 			when WORK3 =>
-				nextstate <= WAIT7;
+				nextstate <= WAIT8;
 			when WAIT7 =>
 				nextstate <= WAIT8;
 			when WAIT8 =>
@@ -125,7 +125,7 @@ begin
 			when INIT1 =>
 				nextstate <= WORK4;
 			when WORK4 =>
-				nextstate <= WAIT9;
+				nextstate <= WAIT10;
 			when WAIT9 =>
 				nextstate <= WAIT10;
 			when WAIT10 =>
@@ -133,7 +133,7 @@ begin
 			when FINAL5 =>
 				nextstate <= WORK5;
 			when WORK5 =>
-				nextstate <= WAIT11;
+				nextstate <= WAIT12;
 			when WAIT11 =>
 				nextstate <= WAIT12;
 			when WAIT12 =>
