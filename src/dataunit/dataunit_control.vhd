@@ -107,9 +107,7 @@ begin
 			when SUBSHIFT3 =>
 				nextstate <= SUBSHIFT4;
 			when SUBSHIFT4 =>
-				nextstate <= SUBSHIFT5;
-			when SUBSHIFT5 =>
-			
+				
 				if(key_lenght = "00" and ROUND = "1010" and enc='1') then --10
 					nextstate <= FINALSTEP;
 				elsif (key_lenght = "01" and ROUND = "1100" and enc='1') then --12
@@ -124,6 +122,8 @@ begin
 					nextstate <= MIXADD;
 				end if;
 			
+			when SUBSHIFT5 =>
+				nextstate <= INIT;
 			when MIXADD =>
 				nextstate <= SUBSHIFT0;
 			when MIXADDdec =>
@@ -176,36 +176,36 @@ begin
 		
 		load_state	<=	'1';
 		
-		br0_sel 	<= "11" when state=SUBSHIFT3 and enc = '1' else
-						"10" when state=SUBSHIFT4 and enc = '1' else
-						"01" when state=SUBSHIFT5 and enc = '1' else
-						"01" when state=SUBSHIFT3 else
-						"10" when state=SUBSHIFT4 else
-						"11" when state=SUBSHIFT5 else
+		br0_sel 	<= "11" when state=SUBSHIFT2 and enc = '1' else
+						"10" when state=SUBSHIFT3 and enc = '1' else
+						"01" when state=SUBSHIFT4 and enc = '1' else
+						"01" when state=SUBSHIFT2 and enc = '0' else
+						"10" when state=SUBSHIFT3 and enc = '0' else
+						"11" when state=SUBSHIFT4 and enc = '0' else
 						"00";
 						
-		br1_sel 	<= "00" when state=SUBSHIFT3 and enc = '1' else
-						"11" when state=SUBSHIFT4 and enc = '1' else
-						"10" when state=SUBSHIFT5 and enc = '1' else
-						"10" when state=SUBSHIFT3 else
-						"11" when state=SUBSHIFT4 else
-						"00" when state=SUBSHIFT5 else
+		br1_sel 	<= "00" when state=SUBSHIFT2 and enc = '1' else
+						"11" when state=SUBSHIFT3 and enc = '1' else
+						"10" when state=SUBSHIFT4 and enc = '1' else
+						"10" when state=SUBSHIFT2 and enc = '0' else
+						"11" when state=SUBSHIFT3 and enc = '0' else
+						"00" when state=SUBSHIFT4 and enc = '0' else
 						"01";
 		 
-		br2_sel	<= "01" when state=SUBSHIFT3 and enc = '1' else
-						"00" when state=SUBSHIFT4 and enc = '1' else
-						"11" when state=SUBSHIFT5 and enc = '1' else
-						"11" when state=SUBSHIFT3 else
-						"00" when state=SUBSHIFT4 else
-						"01" when state=SUBSHIFT5 else
+		br2_sel	<= "01" when state=SUBSHIFT2 and enc = '1' else
+						"00" when state=SUBSHIFT3 and enc = '1' else
+						"11" when state=SUBSHIFT4 and enc = '1' else
+						"11" when state=SUBSHIFT2 and enc = '0' else
+						"00" when state=SUBSHIFT3 and enc = '0' else
+						"01" when state=SUBSHIFT4 and enc = '0' else
 						"10";
 						
-		br3_sel	<= "10" when state=SUBSHIFT3 and enc = '1' else
-						"01" when state=SUBSHIFT4 and enc = '1' else
-						"00" when state=SUBSHIFT5 and enc = '1' else
-						"00" when state=SUBSHIFT3 else
-						"01" when state=SUBSHIFT4 else
-						"10" when state=SUBSHIFT5 else
+		br3_sel	<= "10" when state=SUBSHIFT2 and enc = '1' else
+						"01" when state=SUBSHIFT3 and enc = '1' else
+						"00" when state=SUBSHIFT4 and enc = '1' else
+						"00" when state=SUBSHIFT2 and enc = '0' else
+						"01" when state=SUBSHIFT3 and enc = '0' else
+						"10" when state=SUBSHIFT4 and enc = '0' else
 						"11";
 						
 		valid_out <= 	'1' when state=FINALSTEP or state=UNLOAD0 or state=UNLOAD1 or state=UNLOAD2 or state=UNLOAD3 else

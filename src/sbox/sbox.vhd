@@ -56,8 +56,10 @@ architecture struct of sbox is
 
 begin
 
-	enc_sync<= enc when rising_edge(CLK) else enc_sync;
-	in_sync<= data_in when rising_edge(CLK) else in_sync;
+	--enc_sync<= enc when rising_edge(CLK) else enc_sync;
+	--in_sync<= data_in when rising_edge(CLK) else in_sync;
+	enc_sync<= enc;
+	in_sync<= data_in;
 	
 
 	INVTRAS1 : inv_aff_trans port map( a=> in_sync, q=> invtras);
