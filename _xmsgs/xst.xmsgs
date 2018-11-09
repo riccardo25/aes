@@ -38,6 +38,24 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait0</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait5</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait7</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait9</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">wait11</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
+</msg>
+
 <msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">wait13</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[5]_dff_0</arg>&gt;.
 </msg>
 
@@ -72,6 +90,9 @@
 </msg>
 
 <msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">load3dec</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[4]_dff_0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">subshift5</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[4]_dff_0</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">mixadddec</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">nextstate[4]_dff_0</arg>&gt;.
@@ -147,28 +168,16 @@
 It will be removed from the design.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">SBX4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Rdata[9]_dff_14_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RXDEV</arg>&gt;.
@@ -180,6 +189,15 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Rdata[9]_dff_14_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rx</arg>&gt;.
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SBX4/enc1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">gen_datapath</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SBX3/enc1&gt; &lt;SBX2/enc1&gt; &lt;SBX1/enc1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SBOX3/enc1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataunit_datapath</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SBOX2/enc1&gt; &lt;SBOX1/enc1&gt; &lt;SBOX0/enc1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">SBX4/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">gen_datapath</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="2973" delta="old" >All outputs of instance &lt;<arg fmt="%s" index="1">AES1/DL1/KEYIN</arg>&gt; of block &lt;<arg fmt="%s" index="2">reg_6</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. Underlying logic will be removed.
 </msg>
 
@@ -189,43 +207,19 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Rdata[10]_dff_10_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX4/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2973" delta="new" >All outputs of instance &lt;<arg fmt="%s" index="1">SBX4/INVTRAS1</arg>&gt; of block &lt;<arg fmt="%s" index="2">inv_aff_trans</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">gen_datapath</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX3/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2973" delta="new" >All outputs of instance &lt;<arg fmt="%s" index="1">SBX3/INVTRAS1</arg>&gt; of block &lt;<arg fmt="%s" index="2">inv_aff_trans</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">gen_datapath</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX2/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2973" delta="new" >All outputs of instance &lt;<arg fmt="%s" index="1">SBX2/INVTRAS1</arg>&gt; of block &lt;<arg fmt="%s" index="2">inv_aff_trans</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">gen_datapath</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX1/enc_sync</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX4/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX3/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX2/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AES1/KGEN/GEN/DATPATH1/SBX1/enc1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">aescore</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2973" delta="new" >All outputs of instance &lt;<arg fmt="%s" index="1">SBX1/INVTRAS1</arg>&gt; of block &lt;<arg fmt="%s" index="2">inv_aff_trans</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">gen_datapath</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">TRANSM/TX/DATAPATH/ENC_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">aescore</arg>&gt;.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT1/DATAPATH/SBOX0/enc_sync</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT1/DATAPATH/SBOX1/enc_sync&gt; &lt;AES1/DUNIT1/DATAPATH/SBOX2/enc_sync&gt; &lt;AES1/DUNIT1/DATAPATH/SBOX3/enc_sync&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT0/DATAPATH/SBOX0/enc_sync</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT0/DATAPATH/SBOX1/enc_sync&gt; &lt;AES1/DUNIT0/DATAPATH/SBOX2/enc_sync&gt; &lt;AES1/DUNIT0/DATAPATH/SBOX3/enc_sync&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT0/DATAPATH/SBOX0/enc1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT0/DATAPATH/SBOX1/enc1&gt; &lt;AES1/DUNIT0/DATAPATH/SBOX2/enc1&gt; &lt;AES1/DUNIT0/DATAPATH/SBOX3/enc1&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">AES1/DUNIT1/DATAPATH/SBOX0/enc1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aescore</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AES1/DUNIT1/DATAPATH/SBOX1/enc1&gt; &lt;AES1/DUNIT1/DATAPATH/SBOX2/enc1&gt; &lt;AES1/DUNIT1/DATAPATH/SBOX3/enc1&gt; </arg>
 </msg>
 
 </messages>

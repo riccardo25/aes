@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map M.53d on Fri Oct 26 13:16:58 2018
+// Written by: Map M.53d on Fri Nov 09 15:03:55 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -1852,38 +1852,6 @@ TIMEGRP CLK = BEL "AES1/DL1/KLEIN/Q[1]_dff_1_0" BEL
         "AES1/KGEN/GEN/DATPATH1/CUREC/Q[3]_dff_1_2" BEL
         "AES1/KGEN/GEN/DATPATH1/CUREC/Q[3]_dff_1_1" BEL
         "AES1/KGEN/GEN/DATPATH1/CUREC/Q[3]_dff_1_0" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX4/data_in[7]_dff_0_7" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX4/data_in[7]_dff_0_6" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX4/data_in[7]_dff_0_5" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX4/data_in[7]_dff_0_4" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX4/data_in[7]_dff_0_3" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX4/data_in[7]_dff_0_2" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX4/data_in[7]_dff_0_1" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX4/data_in[7]_dff_0_0" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX3/data_in[7]_dff_0_7" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX3/data_in[7]_dff_0_6" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX3/data_in[7]_dff_0_5" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX3/data_in[7]_dff_0_4" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX3/data_in[7]_dff_0_3" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX3/data_in[7]_dff_0_2" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX3/data_in[7]_dff_0_1" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX3/data_in[7]_dff_0_0" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX2/data_in[7]_dff_0_7" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX2/data_in[7]_dff_0_6" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX2/data_in[7]_dff_0_5" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX2/data_in[7]_dff_0_4" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX2/data_in[7]_dff_0_3" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX2/data_in[7]_dff_0_2" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX2/data_in[7]_dff_0_1" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX2/data_in[7]_dff_0_0" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/data_in[7]_dff_0_7" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/data_in[7]_dff_0_6" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/data_in[7]_dff_0_5" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/data_in[7]_dff_0_4" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/data_in[7]_dff_0_3" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/data_in[7]_dff_0_2" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/data_in[7]_dff_0_1" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/data_in[7]_dff_0_0" BEL
         "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3" BEL
         "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2" BEL
         "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_1" BEL
@@ -1933,33 +1901,27 @@ TIMEGRP CLK = BEL "AES1/DL1/KLEIN/Q[1]_dff_1_0" BEL
         "AES1/KGEN/GEN/DATPATH1/SBX4/INV1/sig1h[3]_dff_1_1" BEL
         "AES1/KGEN/GEN/DATPATH1/SBX4/INV1/sig1h[3]_dff_1_0" BEL
         "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd1" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd2" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd18" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd12" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd4" BEL
         "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd7" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd13" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd2" BEL
         "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd3" BEL
         "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd5" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd9" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd8" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd11" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd4" BEL
         "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd6" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd10" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd12" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd21" BEL
         "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd15" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd20" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd19" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd22" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd23" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd28" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd9" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd13" BEL
         "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd14" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd17" BEL
         "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd16" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd25" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd26" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd24" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd27" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd29" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd22" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd8" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd10" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd18" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd19" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd20" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd21" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd23" BEL
         "AES1/KGEN/STORE_k/R1/Q[128]_dff_1_0" BEL
         "AES1/KGEN/STORE_k/R1/Q[128]_dff_1_1" BEL
         "AES1/KGEN/STORE_k/R1/Q[128]_dff_1_2" BEL
@@ -3814,40 +3776,6 @@ TIMEGRP CLK = BEL "AES1/DL1/KLEIN/Q[1]_dff_1_0" BEL
         "AES1/DUNIT0/DATAPATH/SBOX0/INV1/sig5[3]_dff_5_1" BEL
         "AES1/DUNIT0/DATAPATH/SBOX0/INV1/sig5[3]_dff_5_2" BEL
         "AES1/DUNIT0/DATAPATH/SBOX0/INV1/sig5[3]_dff_5_3" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/data_in[7]_dff_0_0" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/data_in[7]_dff_0_1" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/data_in[7]_dff_0_2" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/data_in[7]_dff_0_3" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/data_in[7]_dff_0_4" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/data_in[7]_dff_0_5" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/data_in[7]_dff_0_6" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/data_in[7]_dff_0_7" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/enc_sync" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX0/enc1" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX1/data_in[7]_dff_0_0" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX1/data_in[7]_dff_0_1" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX1/data_in[7]_dff_0_2" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX1/data_in[7]_dff_0_3" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX1/data_in[7]_dff_0_4" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX1/data_in[7]_dff_0_5" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX1/data_in[7]_dff_0_6" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX1/data_in[7]_dff_0_7" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX2/data_in[7]_dff_0_0" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX2/data_in[7]_dff_0_1" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX2/data_in[7]_dff_0_2" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX2/data_in[7]_dff_0_3" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX2/data_in[7]_dff_0_4" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX2/data_in[7]_dff_0_5" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX2/data_in[7]_dff_0_6" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX2/data_in[7]_dff_0_7" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX3/data_in[7]_dff_0_0" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX3/data_in[7]_dff_0_1" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX3/data_in[7]_dff_0_2" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX3/data_in[7]_dff_0_3" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX3/data_in[7]_dff_0_4" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX3/data_in[7]_dff_0_5" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX3/data_in[7]_dff_0_6" BEL
-        "AES1/DUNIT0/DATAPATH/SBOX3/data_in[7]_dff_0_7" BEL
         "AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_0" BEL
         "AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_1" BEL
         "AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_2" BEL
@@ -3976,6 +3904,7 @@ TIMEGRP CLK = BEL "AES1/DL1/KLEIN/Q[1]_dff_1_0" BEL
         "AES1/DUNIT0/DATAPATH/DC15/DATAPATH/STT1/Q[7]_dff_1_5" BEL
         "AES1/DUNIT0/DATAPATH/DC15/DATAPATH/STT1/Q[7]_dff_1_6" BEL
         "AES1/DUNIT0/DATAPATH/DC15/DATAPATH/STT1/Q[7]_dff_1_7" BEL
+        "AES1/DUNIT0/DATAPATH/SBOX3/enc1" BEL
         "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_3" BEL
         "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_2" BEL
         "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_1" BEL
@@ -4028,40 +3957,6 @@ TIMEGRP CLK = BEL "AES1/DL1/KLEIN/Q[1]_dff_1_0" BEL
         "AES1/DUNIT1/DATAPATH/SBOX0/INV1/sig5[3]_dff_5_1" BEL
         "AES1/DUNIT1/DATAPATH/SBOX0/INV1/sig5[3]_dff_5_2" BEL
         "AES1/DUNIT1/DATAPATH/SBOX0/INV1/sig5[3]_dff_5_3" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/data_in[7]_dff_0_0" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/data_in[7]_dff_0_1" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/data_in[7]_dff_0_2" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/data_in[7]_dff_0_3" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/data_in[7]_dff_0_4" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/data_in[7]_dff_0_5" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/data_in[7]_dff_0_6" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/data_in[7]_dff_0_7" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/enc_sync" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX0/enc1" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX1/data_in[7]_dff_0_0" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX1/data_in[7]_dff_0_1" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX1/data_in[7]_dff_0_2" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX1/data_in[7]_dff_0_3" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX1/data_in[7]_dff_0_4" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX1/data_in[7]_dff_0_5" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX1/data_in[7]_dff_0_6" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX1/data_in[7]_dff_0_7" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX2/data_in[7]_dff_0_0" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX2/data_in[7]_dff_0_1" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX2/data_in[7]_dff_0_2" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX2/data_in[7]_dff_0_3" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX2/data_in[7]_dff_0_4" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX2/data_in[7]_dff_0_5" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX2/data_in[7]_dff_0_6" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX2/data_in[7]_dff_0_7" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX3/data_in[7]_dff_0_0" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX3/data_in[7]_dff_0_1" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX3/data_in[7]_dff_0_2" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX3/data_in[7]_dff_0_3" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX3/data_in[7]_dff_0_4" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX3/data_in[7]_dff_0_5" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX3/data_in[7]_dff_0_6" BEL
-        "AES1/DUNIT1/DATAPATH/SBOX3/data_in[7]_dff_0_7" BEL
         "AES1/DUNIT1/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_0" BEL
         "AES1/DUNIT1/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_1" BEL
         "AES1/DUNIT1/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_2" BEL
@@ -4190,121 +4085,73 @@ TIMEGRP CLK = BEL "AES1/DL1/KLEIN/Q[1]_dff_1_0" BEL
         "AES1/DUNIT1/DATAPATH/DC15/DATAPATH/STT1/Q[7]_dff_1_5" BEL
         "AES1/DUNIT1/DATAPATH/DC15/DATAPATH/STT1/Q[7]_dff_1_6" BEL
         "AES1/DUNIT1/DATAPATH/DC15/DATAPATH/STT1/Q[7]_dff_1_7" BEL
+        "AES1/DUNIT1/DATAPATH/SBOX3/enc1" BEL
         "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_3" BEL
         "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2" BEL
         "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_1" BEL
         "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd22" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd8" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd23" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd2" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd9" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd3" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd19" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd4" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd20" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd5" BEL
         "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd21" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd22" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd2" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd8" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd3" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd9" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd18" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd4" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd10" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd19" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd5" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd11" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd20" BEL
         "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd1" BEL
         "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd7" BEL
         "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd6" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd12" BEL
         "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd13" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd14" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd16" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd17" BEL
         "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd15" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd22" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd8" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd23" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd2" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd9" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd3" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd19" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd4" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd20" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd5" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd16" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd14" BEL
+        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd17" BEL
         "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd21" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd22" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd2" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd8" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd3" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd9" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd18" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd4" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd10" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd19" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd5" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd11" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd20" BEL
         "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd1" BEL
         "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd7" BEL
         "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd6" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd12" BEL
         "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd13" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd14" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd16" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd17" BEL
         "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd15" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd16" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd14" BEL
+        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd17" BEL
         "AES1/SKMD/nextstate[3]_dff_0_FSM_FFd2" BEL
         "AES1/SKMD/nextstate[3]_dff_0_FSM_FFd3" BEL
         "AES1/SKMD/nextstate[3]_dff_0_FSM_FFd1" BEL
         "AES1/SKMD/nextstate[3]_dff_0_FSM_FFd4" BEL
         "TRANSM/SER/RXDEV/Rdatavalid" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd22_1" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd10_1" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd9_1" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_2_1" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2_1" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_3_1" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_3_1" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd10_2" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_1_1" BEL
-        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd9_2" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd2_1" BEL
         "AES1/KGEN/INTE/regKEYLEN/Q[1]_dff_1_0_1" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_1_1" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_1_1" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd16_1" BEL
         "AES1/KGEN/INTE/regKEYLEN/Q[1]_dff_1_1_1" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_1" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_0_1" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2_1" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_1_2" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_0_2" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3_2" BEL
-        "AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_0_3" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_1" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_2" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_3" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_4" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_5" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_6" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_7" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_8" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_9" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_10" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_11" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_12" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_13" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_14" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_15" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_16" BEL
-        "AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0_17" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_1" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_2" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_3" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_4" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_5" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_6" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_7" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_8" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_9" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_10" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_11" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_12" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_13" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_14" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_15" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_16" BEL
-        "AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0_17" BEL "CLK_BUFGP/BUFG" BEL
-        "AES1/DUNIT1/CONTROLUNIT/Mshreg_nextstate[4]_dff_0_FSM_FFd10" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd101" BEL
-        "TRANSM/SER/Mshreg_RXD_s2" BEL "TRANSM/SER/RXD_s2" BEL
-        "AES1/DUNIT0/CONTROLUNIT/Mshreg_nextstate[4]_dff_0_FSM_FFd10" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd101" BEL
-        "AES1/DUNIT0/CONTROLUNIT/rst_n_inv_shift1" BEL
-        "AES1/DUNIT0/CONTROLUNIT/rst_n_inv_shift2" BEL
-        "AES1/DUNIT0/CONTROLUNIT/rst_n_inv_shift3" BEL
-        "AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd10" BEL
-        "AES1/DUNIT1/CONTROLUNIT/rst_n_inv_shift1" BEL
-        "AES1/DUNIT1/CONTROLUNIT/rst_n_inv_shift2" BEL
-        "AES1/DUNIT1/CONTROLUNIT/rst_n_inv_shift3" BEL
-        "AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd10";
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd7_1" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd22_1" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd12_1" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd5_1" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd19_1" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd5_2" BEL
+        "AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd2_2" BEL
+        "CLK_BUFGP/BUFG" BEL "TRANSM/SER/Mshreg_RXD_s2" BEL
+        "TRANSM/SER/RXD_s2";
 TS_CLK = PERIOD TIMEGRP "CLK" 10 ns HIGH 50%;
 SCHEMATIC END;
 

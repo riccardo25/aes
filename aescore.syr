@@ -3,14 +3,14 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.33 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: aescore.prj
 
@@ -503,11 +503,9 @@ Unit <mux2input_2> synthesized.
 Synthesizing Unit <sbox>.
     Related source file is "d:/repository/xilinx/aes/src/sbox/sbox.vhd".
 WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 8-bit register for signal <in_sync>.
     Found 1-bit register for signal <enc1>.
-    Found 1-bit register for signal <enc_sync>.
     Summary:
-	inferred  10 D-type flip-flop(s).
+	inferred   1 D-type flip-flop(s).
 	inferred   2 Multiplexer(s).
 Unit <sbox> synthesized.
 
@@ -592,6 +590,12 @@ Unit <reg_2> synthesized.
 Synthesizing Unit <gen_control>.
     Related source file is "d:/repository/xilinx/aes/src/keygen/gen_control.vhd".
     Found 6-bit register for signal <state>.
+INFO:Xst:1799 - State wait0 is never reached in FSM <nextstate[5]_dff_0>.
+INFO:Xst:1799 - State wait3 is never reached in FSM <nextstate[5]_dff_0>.
+INFO:Xst:1799 - State wait5 is never reached in FSM <nextstate[5]_dff_0>.
+INFO:Xst:1799 - State wait7 is never reached in FSM <nextstate[5]_dff_0>.
+INFO:Xst:1799 - State wait9 is never reached in FSM <nextstate[5]_dff_0>.
+INFO:Xst:1799 - State wait11 is never reached in FSM <nextstate[5]_dff_0>.
 INFO:Xst:1799 - State wait13 is never reached in FSM <nextstate[5]_dff_0>.
 INFO:Xst:1799 - State wait14 is never reached in FSM <nextstate[5]_dff_0>.
 INFO:Xst:1799 - State wait15 is never reached in FSM <nextstate[5]_dff_0>.
@@ -605,9 +609,9 @@ INFO:Xst:1799 - State wait22 is never reached in FSM <nextstate[5]_dff_0>.
     Found finite state machine <FSM_0> for signal <nextstate[5]_dff_0>.
     -----------------------------------------------------------------------
     | States             | 39                                             |
-    | Transitions        | 34                                             |
+    | Transitions        | 28                                             |
     | Inputs             | 5                                              |
-    | Outputs            | 30                                             |
+    | Outputs            | 24                                             |
     | Clock              | CLK (rising_edge)                              |
     | Reset              | rst_n (negative)                               |
     | Reset type         | asynchronous                                   |
@@ -733,13 +737,14 @@ Synthesizing Unit <dataunit_control>.
     Related source file is "d:/repository/xilinx/aes/src/dataunit/dataunit_control.vhd".
     Found 5-bit register for signal <state>.
 INFO:Xst:1799 - State load3dec is never reached in FSM <nextstate[4]_dff_0>.
+INFO:Xst:1799 - State subshift5 is never reached in FSM <nextstate[4]_dff_0>.
 INFO:Xst:1799 - State mixadddec is never reached in FSM <nextstate[4]_dff_0>.
     Found finite state machine <FSM_1> for signal <nextstate[4]_dff_0>.
     -----------------------------------------------------------------------
     | States             | 25                                             |
-    | Transitions        | 41                                             |
+    | Transitions        | 40                                             |
     | Inputs             | 11                                             |
-    | Outputs            | 33                                             |
+    | Outputs            | 25                                             |
     | Clock              | CLK (rising_edge)                              |
     | Reset              | rst_n (negative)                               |
     | Reset type         | asynchronous                                   |
@@ -749,7 +754,7 @@ INFO:Xst:1799 - State mixadddec is never reached in FSM <nextstate[4]_dff_0>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Summary:
-	inferred  18 Multiplexer(s).
+	inferred  26 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <dataunit_control> synthesized.
 
@@ -1069,8 +1074,8 @@ Macro Statistics
  4-bit subtractor                                      : 2
  5-bit adder                                           : 2
  6-bit adder                                           : 2
-# Registers                                            : 235
- 1-bit register                                        : 33
+# Registers                                            : 211
+ 1-bit register                                        : 21
  10-bit register                                       : 3
  11-bit register                                       : 1
  128-bit register                                      : 3
@@ -1081,17 +1086,17 @@ Macro Statistics
  4-bit register                                        : 42
  5-bit register                                        : 1
  6-bit register                                        : 2
- 8-bit register                                        : 113
+ 8-bit register                                        : 101
 # Comparators                                          : 2
  2-bit comparator not equal                            : 1
  256-bit comparator not equal                          : 1
-# Multiplexers                                         : 620
+# Multiplexers                                         : 636
  1-bit 2-to-1 multiplexer                              : 2
  11-bit 2-to-1 multiplexer                             : 2
  11-bit 3-to-1 multiplexer                             : 1
  128-bit 2-to-1 multiplexer                            : 4
  129-bit 16-to-1 multiplexer                           : 2
- 2-bit 2-to-1 multiplexer                              : 39
+ 2-bit 2-to-1 multiplexer                              : 55
  3-bit 2-to-1 multiplexer                              : 12
  32-bit 2-to-1 multiplexer                             : 10
  32-bit 4-to-1 multiplexer                             : 7
@@ -1120,14 +1125,10 @@ Macro Statistics
 
 WARNING:Xst:1290 - Hierarchical block <KEYIN> is unconnected in block <DL1>.
    It will be removed from the design.
-WARNING:Xst:1710 - FF/Latch <enc_sync> (without init value) has a constant value of 1 in block <SBX1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <enc_sync> (without init value) has a constant value of 1 in block <SBX2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <enc_sync> (without init value) has a constant value of 1 in block <SBX3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <enc_sync> (without init value) has a constant value of 1 in block <SBX4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enc1> (without init value) has a constant value of 1 in block <SBX1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enc1> (without init value) has a constant value of 1 in block <SBX2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enc1> (without init value) has a constant value of 1 in block <SBX3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enc1> (without init value) has a constant value of 1 in block <SBX4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <enc1> (without init value) has a constant value of 1 in block <SBX1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <enc1> (without init value) has a constant value of 1 in block <SBX2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <enc1> (without init value) has a constant value of 1 in block <SBX3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <enc1> (without init value) has a constant value of 1 in block <SBX4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <Rdata[9]_dff_14_0> of sequential type is unconnected in block <RXDEV>.
 
 Synthesizing (advanced) Unit <cap_rx_datapath>.
@@ -1172,23 +1173,23 @@ Macro Statistics
 # Counters                                             : 4
  4-bit up counter                                      : 2
  6-bit up counter                                      : 2
-# Registers                                            : 4620
- Flip-Flops                                            : 4620
+# Registers                                            : 4512
+ Flip-Flops                                            : 4512
 # Comparators                                          : 2
  2-bit comparator not equal                            : 1
  256-bit comparator not equal                          : 1
-# Multiplexers                                         : 701
- 1-bit 2-to-1 multiplexer                              : 97
+# Multiplexers                                         : 633
+ 1-bit 2-to-1 multiplexer                              : 1
  11-bit 2-to-1 multiplexer                             : 2
  11-bit 3-to-1 multiplexer                             : 1
  128-bit 2-to-1 multiplexer                            : 4
  129-bit 16-to-1 multiplexer                           : 2
- 2-bit 2-to-1 multiplexer                              : 39
+ 2-bit 2-to-1 multiplexer                              : 55
  3-bit 2-to-1 multiplexer                              : 12
  32-bit 2-to-1 multiplexer                             : 10
  32-bit 4-to-1 multiplexer                             : 7
  5-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 484
+ 8-bit 2-to-1 multiplexer                              : 496
  8-bit 4-to-1 multiplexer                              : 9
  8-bit 7-to-1 multiplexer                              : 32
 # FSMs                                                 : 10
@@ -1208,6 +1209,9 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+INFO:Xst:2261 - The FF/Latch <SBX4/enc1> in Unit <gen_datapath> is equivalent to the following 3 FFs/Latches, which will be removed : <SBX3/enc1> <SBX2/enc1> <SBX1/enc1> 
+INFO:Xst:2261 - The FF/Latch <SBOX3/enc1> in Unit <dataunit_datapath> is equivalent to the following 3 FFs/Latches, which will be removed : <SBOX2/enc1> <SBOX1/enc1> <SBOX0/enc1> 
+WARNING:Xst:1710 - FF/Latch <SBX4/enc1> (without init value) has a constant value of 1 in block <gen_datapath>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2973 - All outputs of instance <AES1/DL1/KEYIN> of block <reg_6> are unconnected in block <aescore>. Underlying logic will be removed.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <AES1/DL1/nextstate[3]_dff_0> on signal <nextstate[3]_dff_0[1:12]> with one-hot encoding.
@@ -1285,39 +1289,39 @@ Optimizing FSM <TRANSM/RX/CTRLUNIT/nextstate[3]_dff_0> on signal <nextstate[3]_d
  cipherload2 | 1001
 -------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0> on signal <nextstate[5]_dff_0[1:29]> with one-hot encoding.
-------------------------------------------
+Optimizing FSM <AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0> on signal <nextstate[5]_dff_0[1:23]> with one-hot encoding.
+------------------------------------
  State   | Encoding
-------------------------------------------
- useless | 00000000000000000000000000001
- init0   | 00000000000000000000000000010
- init1   | 00000000000000000000000010000
- work0   | 00000000000000000000000000100
- work1   | 00000000000000000000000001000
- work2   | 00000000000000100000000000000
- work3   | 00000000000001000000000000000
- work4   | 00000000000000000000000100000
- work5   | 00000000000010000000000000000
- final0  | 00000000001000000000000000000
- final1  | 00000000100000000000000000000
- final2  | 00000000000000010000000000000
- final3  | 00000010000000000000000000000
- final4  | 00001000000000000000000000000
- final5  | 00100000000000000000000000000
- final6  | 10000000000000000000000000000
- wait0   | 00000000000000000000001000000
- wait1   | 00000000000100000000000000000
- wait2   | 00000000000000001000000000000
- wait3   | 00000000000000000000010000000
- wait4   | 00000000010000000000000000000
- wait5   | 00000000000000000000100000000
- wait6   | 00000001000000000000000000000
- wait7   | 00000000000000000001000000000
- wait8   | 00000100000000000000000000000
- wait9   | 00000000000000000010000000000
- wait10  | 00010000000000000000000000000
- wait11  | 00000000000000000100000000000
- wait12  | 01000000000000000000000000000
+------------------------------------
+ useless | 00000000000000000000001
+ init0   | 00000000000000000000010
+ init1   | 00000000000000000010000
+ work0   | 00000000000000000000100
+ work1   | 00000000000000000001000
+ work2   | 00000000100000000000000
+ work3   | 00000001000000000000000
+ work4   | 00000000000000000100000
+ work5   | 00000010000000000000000
+ final0  | 00000100000000000000000
+ final1  | 00001000000000000000000
+ final2  | 00000000010000000000000
+ final3  | 00010000000000000000000
+ final4  | 00100000000000000000000
+ final5  | 01000000000000000000000
+ final6  | 10000000000000000000000
+ wait0   | unreached
+ wait1   | 00000000000000001000000
+ wait2   | 00000000001000000000000
+ wait3   | unreached
+ wait4   | 00000000000000010000000
+ wait5   | unreached
+ wait6   | 00000000000000100000000
+ wait7   | unreached
+ wait8   | 00000000000001000000000
+ wait9   | unreached
+ wait10  | 00000000000010000000000
+ wait11  | unreached
+ wait12  | 00000000000100000000000
  wait13  | unreached
  wait14  | unreached
  wait15  | unreached
@@ -1328,39 +1332,39 @@ Optimizing FSM <AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0> on signal <nextstate
  wait20  | unreached
  wait21  | unreached
  wait22  | unreached
-------------------------------------------
+------------------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0> on signal <nextstate[4]_dff_0[1:23]> with one-hot encoding.
-Optimizing FSM <AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0> on signal <nextstate[4]_dff_0[1:23]> with one-hot encoding.
----------------------------------------
+Optimizing FSM <AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0> on signal <nextstate[4]_dff_0[1:22]> with one-hot encoding.
+Optimizing FSM <AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0> on signal <nextstate[4]_dff_0[1:22]> with one-hot encoding.
+--------------------------------------
  State      | Encoding
----------------------------------------
- init       | 00000000000000000000001
- load0      | 00000000000010000000000
- load1      | 00000000000000000000100
- load2      | 00000000000000000001000
- load3      | 00000000000000000010000
+--------------------------------------
+ init       | 0000000000000000000001
+ load0      | 0000000000010000000000
+ load1      | 0000000000000000000100
+ load2      | 0000000000000000001000
+ load3      | 0000000000000000010000
  load3dec   | unreached
- prepare0   | 00000000000000001000000
- prepare1   | 00000000000000100000000
- prepare2   | 00000000000001000000000
- preloadenc | 10000000000000000000000
- preloaddec | 00000000000000010000000
- subshift0  | 00000000000000000100000
- subshift1  | 00000000000100000000000
- subshift2  | 00000000001000000000000
- subshift3  | 00000000010000000000000
- subshift4  | 00000000100000000000000
- subshift5  | 00000001000000000000000
- mixadd     | 00000010000000000000000
- finalstep  | 00000100000000000000000
+ prepare0   | 0000000000000001000000
+ prepare1   | 0000000000000100000000
+ prepare2   | 0000000000001000000000
+ preloadenc | 1000000000000000000000
+ preloaddec | 0000000000000010000000
+ subshift0  | 0000000000000000100000
+ subshift1  | 0000000000100000000000
+ subshift2  | 0000000001000000000000
+ subshift3  | 0000000010000000000000
+ subshift4  | 0000000100000000000000
+ subshift5  | unreached
+ mixadd     | 0000001000000000000000
+ finalstep  | 0000010000000000000000
  mixadddec  | unreached
- unload0    | 00001000000000000000000
- unload1    | 00010000000000000000000
- unload2    | 00100000000000000000000
- unload3    | 01000000000000000000000
- useless0   | 00000000000000000000010
----------------------------------------
+ unload0    | 0000100000000000000000
+ unload1    | 0001000000000000000000
+ unload2    | 0010000000000000000000
+ unload3    | 0100000000000000000000
+ useless0   | 0000000000000000000010
+--------------------------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <AES1/SKMD/nextstate[3]_dff_0> on signal <nextstate[3]_dff_0[1:4]> with gray encoding.
 --------------------
@@ -1379,6 +1383,10 @@ Optimizing FSM <AES1/SKMD/nextstate[3]_dff_0> on signal <nextstate[3]_dff_0[1:4]
 --------------------
 WARNING:Xst:1710 - FF/Latch <Rdata[10]_dff_10_9> (without init value) has a constant value of 1 in block <tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Rdata[10]_dff_10_10> (without init value) has a constant value of 1 in block <tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2973 - All outputs of instance <SBX4/INVTRAS1> of block <inv_aff_trans> are unconnected in block <gen_datapath>. Underlying logic will be removed.
+WARNING:Xst:2973 - All outputs of instance <SBX3/INVTRAS1> of block <inv_aff_trans> are unconnected in block <gen_datapath>. Underlying logic will be removed.
+WARNING:Xst:2973 - All outputs of instance <SBX2/INVTRAS1> of block <inv_aff_trans> are unconnected in block <gen_datapath>. Underlying logic will be removed.
+WARNING:Xst:2973 - All outputs of instance <SBX1/INVTRAS1> of block <inv_aff_trans> are unconnected in block <gen_datapath>. Underlying logic will be removed.
 
 Optimizing unit <aescore> ...
 
@@ -1406,8 +1414,6 @@ Optimizing unit <key_interface> ...
 
 Optimizing unit <gen_datapath> ...
 
-Optimizing unit <sbox> ...
-
 Optimizing unit <inv8> ...
 
 Optimizing unit <gen_control> ...
@@ -1419,38 +1425,18 @@ Optimizing unit <dataunit_datapath> ...
 Optimizing unit <dataunit_control> ...
 
 Optimizing unit <SKMD_controller> ...
-WARNING:Xst:1710 - FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX4/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX3/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX2/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX1/enc_sync> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX4/enc1> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX3/enc1> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX2/enc1> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AES1/KGEN/GEN/DATPATH1/SBX1/enc1> (without init value) has a constant value of 1 in block <aescore>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <TRANSM/TX/DATAPATH/ENC_out> of sequential type is unconnected in block <aescore>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-INFO:Xst:2261 - The FF/Latch <AES1/DUNIT1/DATAPATH/SBOX0/enc_sync> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT1/DATAPATH/SBOX1/enc_sync> <AES1/DUNIT1/DATAPATH/SBOX2/enc_sync> <AES1/DUNIT1/DATAPATH/SBOX3/enc_sync> 
-INFO:Xst:2261 - The FF/Latch <AES1/DUNIT0/DATAPATH/SBOX0/enc_sync> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT0/DATAPATH/SBOX1/enc_sync> <AES1/DUNIT0/DATAPATH/SBOX2/enc_sync> <AES1/DUNIT0/DATAPATH/SBOX3/enc_sync> 
-INFO:Xst:2261 - The FF/Latch <AES1/DUNIT0/DATAPATH/SBOX0/enc1> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT0/DATAPATH/SBOX1/enc1> <AES1/DUNIT0/DATAPATH/SBOX2/enc1> <AES1/DUNIT0/DATAPATH/SBOX3/enc1> 
-INFO:Xst:2261 - The FF/Latch <AES1/DUNIT1/DATAPATH/SBOX0/enc1> in Unit <aescore> is equivalent to the following 3 FFs/Latches, which will be removed : <AES1/DUNIT1/DATAPATH/SBOX1/enc1> <AES1/DUNIT1/DATAPATH/SBOX2/enc1> <AES1/DUNIT1/DATAPATH/SBOX3/enc1> 
 Found area constraint ratio of 100 (+ 5) on block aescore, actual ratio is 36.
-FlipFlop AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_0 has been replicated 17 time(s)
-FlipFlop AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_1 has been replicated 1 time(s)
-FlipFlop AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_2 has been replicated 1 time(s)
-FlipFlop AES1/DUNIT0/DATAPATH/ROUND1/Q[3]_dff_1_3 has been replicated 1 time(s)
-FlipFlop AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_0 has been replicated 17 time(s)
-FlipFlop AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_1 has been replicated 1 time(s)
-FlipFlop AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_2 has been replicated 1 time(s)
-FlipFlop AES1/DUNIT1/DATAPATH/ROUND1/Q[3]_dff_1_3 has been replicated 1 time(s)
-FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd10 has been replicated 2 time(s)
+FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd12 has been replicated 1 time(s)
+FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd16 has been replicated 1 time(s)
+FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd19 has been replicated 1 time(s)
+FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd2 has been replicated 2 time(s)
 FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd22 has been replicated 1 time(s)
-FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd9 has been replicated 2 time(s)
-FlipFlop AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_0 has been replicated 3 time(s)
-FlipFlop AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_1 has been replicated 2 time(s)
-FlipFlop AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2 has been replicated 1 time(s)
-FlipFlop AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3 has been replicated 2 time(s)
+FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd5 has been replicated 2 time(s)
+FlipFlop AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd7 has been replicated 1 time(s)
 FlipFlop AES1/KGEN/INTE/regKEYLEN/Q[1]_dff_1_0 has been replicated 1 time(s)
 FlipFlop AES1/KGEN/INTE/regKEYLEN/Q[1]_dff_1_1 has been replicated 1 time(s)
 
@@ -1458,19 +1444,16 @@ Final Macro Processing ...
 
 Processing Unit <aescore> :
 	Found 2-bit shift register for signal <TRANSM/SER/RXD_s2>.
-	Found 4-bit shift register for signal <AES1/DUNIT0/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd10>.
-	Found 4-bit shift register for signal <AES1/DUNIT1/CONTROLUNIT/nextstate[4]_dff_0_FSM_FFd10>.
 Unit <aescore> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 4520
- Flip-Flops                                            : 4520
-# Shift Registers                                      : 3
+# Registers                                            : 4378
+ Flip-Flops                                            : 4378
+# Shift Registers                                      : 1
  2-bit shift register                                  : 1
- 4-bit shift register                                  : 2
 
 =========================================================================
 
@@ -1493,26 +1476,26 @@ Top Level Output File Name         : aescore.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 7904
+# BELS                             : 7400
 #      GND                         : 1
-#      INV                         : 34
-#      LUT2                        : 167
-#      LUT3                        : 199
-#      LUT4                        : 343
-#      LUT5                        : 1705
-#      LUT6                        : 4061
+#      INV                         : 4
+#      LUT2                        : 148
+#      LUT3                        : 266
+#      LUT4                        : 411
+#      LUT5                        : 1151
+#      LUT6                        : 4189
 #      MUXCY                       : 86
-#      MUXF7                       : 1049
+#      MUXF7                       : 885
 #      MUXF8                       : 258
 #      VCC                         : 1
-# FlipFlops/Latches                : 4531
-#      FD                          : 253
-#      FDC                         : 112
-#      FDCE                        : 4103
-#      FDE                         : 58
+# FlipFlops/Latches                : 4379
+#      FD                          : 147
+#      FDC                         : 116
+#      FDCE                        : 4055
+#      FDE                         : 56
 #      FDP                         : 5
-# Shift Registers                  : 3
-#      SRLC16E                     : 3
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 12
@@ -1526,18 +1509,18 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            4531  out of  54576     8%  
- Number of Slice LUTs:                 6512  out of  27288    23%  
-    Number used as Logic:              6509  out of  27288    23%  
-    Number used as Memory:                3  out of   6408     0%  
-       Number used as SRL:                3
+ Number of Slice Registers:            4379  out of  54576     8%  
+ Number of Slice LUTs:                 6170  out of  27288    22%  
+    Number used as Logic:              6169  out of  27288    22%  
+    Number used as Memory:                1  out of   6408     0%  
+       Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   9949
-   Number with an unused Flip Flop:    5418  out of   9949    54%  
-   Number with an unused LUT:          3437  out of   9949    34%  
-   Number of fully used LUT-FF pairs:  1094  out of   9949    10%  
-   Number of unique control sets:        60
+ Number of LUT Flip Flop pairs used:   9499
+   Number with an unused Flip Flop:    5120  out of   9499    53%  
+   Number with an unused LUT:          3329  out of   9499    35%  
+   Number of fully used LUT-FF pairs:  1050  out of   9499    11%  
+   Number of unique control sets:        58
 
 IO Utilization: 
  Number of IOs:                          13
@@ -1567,7 +1550,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 4534  |
+CLK                                | BUFGP                  | 4380  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1578,8 +1561,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.546ns (Maximum Frequency: 117.013MHz)
-   Minimum input arrival time before clock: 6.466ns
+   Minimum period: 10.258ns (Maximum Frequency: 97.483MHz)
+   Minimum input arrival time before clock: 6.417ns
    Maximum output required time after clock: 6.546ns
    Maximum combinational path delay: No path found
 
@@ -1589,37 +1572,38 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 8.546ns (frequency: 117.013MHz)
-  Total number of paths / destination ports: 433647 / 12238
+  Clock period: 10.258ns (frequency: 97.483MHz)
+  Total number of paths / destination ports: 533834 / 12002
 -------------------------------------------------------------------------
-Delay:               8.546ns (Levels of Logic = 7)
-  Source:            AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2 (FF)
-  Destination:       AES1/KGEN/GEN/DATPATH1/REGw2/Q[31]_dff_1_30 (FF)
+Delay:               10.258ns (Levels of Logic = 8)
+  Source:            AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd1 (FF)
+  Destination:       AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2 to AES1/KGEN/GEN/DATPATH1/REGw2/Q[31]_dff_1_30
+  Data Path: AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd1 to AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              18   0.525   1.050  AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2 (AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_2)
-     LUT4:I3->O            2   0.254   0.893  AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INV1/Mxor_q<2>_xo<0>1 (AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig8<2>)
-     LUT6:I2->O            7   0.254   0.774  AES1/KGEN/GEN/DATPATH1/SBX1/INV1/MUL2/Mxor_q<1>_xo<0> (AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig9<1>)
-     LUT6:I5->O            7   0.254   1.204  AES1/KGEN/GEN/DATPATH1/SBX1/INV1/INVMAP1/Mxor_a<5>_xo<0>1 (AES1/KGEN/GEN/DATPATH1/SBX1/outinvers<5>)
-     LUT6:I1->O            5   0.254   0.715  AES1/KGEN/GEN/DATPATH1/Mxor_x1w0_30_xo<0>11 (AES1/KGEN/GEN/DATPATH1/N3)
-     LUT5:I4->O            1   0.254   0.808  AES1/KGEN/GEN/DATPATH1/MUX6/Mmux_Y241_SW1 (N809)
-     LUT6:I3->O            6   0.235   0.745  AES1/KGEN/GEN/DATPATH1/MUX7/Y<30>1 (AES1/KGEN/GEN/DATPATH1/t6<30>)
-     LUT4:I3->O            1   0.254   0.000  AES1/KGEN/GEN/DATPATH1/MUXw6/Mmux_Y241 (AES1/KGEN/GEN/DATPATH1/w6sel<30>)
-     FDCE:D                    0.074          AES1/KGEN/GEN/DATPATH1/REGw6/Q[31]_dff_1_30
+     FDC:C->Q             55   0.525   1.581  AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd1 (AES1/KGEN/GEN/CTRLUNIT1/nextstate[5]_dff_0_FSM_FFd1)
+     LUT3:I2->O            9   0.254   0.830  AES1/KGEN/GEN/CTRLUNIT1/sel_rconout1 (AES1/KGEN/GEN/sel_rconout)
+     LUT6:I5->O          121   0.254   2.388  AES1/KGEN/GEN/CTRLUNIT1/Mmux_sel_rotWord2 (AES1/KGEN/GEN/sel_rotWord<1>)
+     LUT6:I0->O            1   0.254   0.000  AES1/KGEN/GEN/DATPATH1/MUX3/Mmux_Y62_SW1_G (N3230)
+     MUXF7:I1->O           2   0.175   0.725  AES1/KGEN/GEN/DATPATH1/MUX3/Mmux_Y62_SW1 (N1335)
+     LUT5:I3->O            4   0.250   0.684  AES1/KGEN/GEN/DATPATH1/MUX3/Mmux_Y62 (AES1/KGEN/GEN/DATPATH1/SBX1/ininvers<5>)
+     LUT3:I2->O            5   0.254   0.823  AES1/KGEN/GEN/DATPATH1/SBX1/INV1/MAP1/Mxor_a_h<0>_xo<0>1 (AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig1h<0>)
+     LUT6:I4->O            1   0.250   0.688  AES1/KGEN/GEN/DATPATH1/SBX1/INV1/Mxor_sig5[3]_sig3[3]_xor_4_OUT_3_xo<0>_SW0_SW0 (N1096)
+     LUT5:I3->O            1   0.250   0.000  AES1/KGEN/GEN/DATPATH1/SBX1/INV1/Mxor_sig5[3]_sig3[3]_xor_4_OUT_3_xo<0> (AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_sig3[3]_xor_4_OUT<3>)
+     FD:D                      0.074          AES1/KGEN/GEN/DATPATH1/SBX1/INV1/sig5[3]_dff_5_3
     ----------------------------------------
-    Total                      8.546ns (2.358ns logic, 6.188ns route)
-                                       (27.6% logic, 72.4% route)
+    Total                     10.258ns (2.540ns logic, 7.718ns route)
+                                       (24.8% logic, 75.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 1998 / 1998
+  Total number of paths / destination ports: 1956 / 1956
 -------------------------------------------------------------------------
-Offset:              6.466ns (Levels of Logic = 3)
+Offset:              6.417ns (Levels of Logic = 3)
   Source:            rst_n (PAD)
   Destination:       AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_0 (FF)
   Destination Clock: CLK rising
@@ -1630,11 +1614,11 @@ Offset:              6.466ns (Levels of Logic = 3)
     ----------------------------------------  ------------
      IBUF:I->O            16   1.228   1.233  rst_n_IBUF (rst_n_IBUF)
      LUT3:I0->O            2   0.235   1.047  AES1/SKMD/resetCBC1 (AES1/resetCBC)
-     LUT5:I0->O          152   0.254   2.010  AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/rst_n_inv1 (AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/rst_n_inv)
+     LUT5:I0->O          132   0.254   1.961  AES1/DUNIT0/DATAPATH/reset_reg_inv1 (AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/rst_n_inv)
      FDCE:CLR                  0.459          AES1/DUNIT0/DATAPATH/DC0/DATAPATH/STT1/Q[7]_dff_1_0
     ----------------------------------------
-    Total                      6.466ns (2.176ns logic, 4.290ns route)
-                                       (33.7% logic, 66.3% route)
+    Total                      6.417ns (2.176ns logic, 4.241ns route)
+                                       (33.9% logic, 66.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
@@ -1659,14 +1643,14 @@ Offset:              6.546ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 83.00 secs
-Total CPU time to Xst completion: 82.51 secs
+Total REAL time to Xst completion: 80.00 secs
+Total CPU time to Xst completion: 80.13 secs
  
 --> 
 
-Total memory usage is 360104 kilobytes
+Total memory usage is 358696 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   30 (   0 filtered)
-Number of infos    :   44 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :   49 (   0 filtered)
 
